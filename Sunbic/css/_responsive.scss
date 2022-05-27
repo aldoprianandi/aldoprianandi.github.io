@@ -272,4 +272,15 @@
             padding: 2rem;
         }
     }
+
+    .login,
+    .register {
+        &-form {
+            padding: 1.5rem;
+
+            input {
+                font-size: 14px;
+            }
+        }
+    }
 }

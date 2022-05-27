@@ -1,12 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 .navbar {
   width: 90%;
   margin: auto;
@@ -927,6 +918,193 @@ button.btn-secondary:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .5rem;
+}
+
+.login-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-form {
+  border-radius: .5rem;
+  margin: 2rem;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.login-form h4 {
+  font-size: 24px;
+  font-family: 'GT Walsheim Pro';
+}
+
+.login-form p {
+  margin-top: .5rem;
+  font-family: 'Inter', sans-serif;
+  color: #939393;
+  margin-bottom: 2rem;
+}
+
+.login-form h4,
+.login-form p {
+  text-align: center;
+}
+
+.login-form button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.login-form input {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  padding: .7rem 1.4rem;
+  outline: none;
+  border: 2px solid #F1F1F1;
+  border-radius: .25rem;
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.login-form input::-webkit-input-placeholder {
+  color: #7C7C7C;
+}
+
+.login-form input:-ms-input-placeholder {
+  color: #7C7C7C;
+}
+
+.login-form input::-ms-input-placeholder {
+  color: #7C7C7C;
+}
+
+.login-form input::placeholder {
+  color: #7C7C7C;
+}
+
+.login-form input:active, .login-form input:focus {
+  border: 2px solid #8A313A;
+}
+
+.login-footer {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.login-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.register {
+  margin: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .5rem;
+}
+
+.register-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register-form {
+  border-radius: .5rem;
+  margin: 2rem;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.register-form h4 {
+  font-size: 24px;
+  font-family: 'GT Walsheim Pro';
+}
+
+.register-form p {
+  margin-top: .5rem;
+  font-family: 'Inter', sans-serif;
+  color: #939393;
+  margin-bottom: 2rem;
+}
+
+.register-form h4,
+.register-form p {
+  text-align: center;
+}
+
+.register-form button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.register-form input {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  padding: .7rem 1.4rem;
+  outline: none;
+  border: 2px solid #F1F1F1;
+  border-radius: .25rem;
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.register-form input::-webkit-input-placeholder {
+  color: #7C7C7C;
+}
+
+.register-form input:-ms-input-placeholder {
+  color: #7C7C7C;
+}
+
+.register-form input::-ms-input-placeholder {
+  color: #7C7C7C;
+}
+
+.register-form input::placeholder {
+  color: #7C7C7C;
+}
+
+.register-form input:active, .register-form input:focus {
+  border: 2px solid #8A313A;
+}
+
+.register-footer {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.register-footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     display: -webkit-box;
@@ -1178,6 +1356,14 @@ button.btn-secondary:hover {
   }
   .admission-form {
     padding: 2rem;
+  }
+  .login-form,
+  .register-form {
+    padding: 1.5rem;
+  }
+  .login-form input,
+  .register-form input {
+    font-size: 14px;
   }
 }
 
