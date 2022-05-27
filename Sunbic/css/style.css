@@ -132,6 +132,9 @@ input[type="checkbox"] {
   border-radius: .2rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -149,6 +152,7 @@ input[type="checkbox"] {
   border-radius: .2rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-secondary:hover {
@@ -173,6 +177,17 @@ input[type="checkbox"] {
 .btn-secondary-small:hover {
   background-color: #000;
   color: #fff;
+}
+
+button.btn-secondary {
+  border: 2px solid #fff;
+  background-color: #8A313A;
+  padding: .5rem 3rem;
+  color: #fff;
+}
+
+button.btn-secondary:hover {
+  border: 2px solid #000;
 }
 
 .benefit {
@@ -780,6 +795,138 @@ input[type="checkbox"] {
   font-family: 'Inter', sans-serif;
 }
 
+.admission {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.admission-header h2 {
+  font-size: 45px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.admission-header p {
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', sans-serif;
+}
+
+.admission hr {
+  margin: 2rem 0;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.admission .form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.admission .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.admission .input-group input {
+  width: 50%;
+  border: none;
+  outline: none;
+}
+
+.admission-breadcrumb {
+  margin-bottom: 4rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.admission-breadcrumb a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.admission-breadcrumb a:hover {
+  color: #8A313A;
+}
+
+.admission-form {
+  background-color: #8A313A;
+  padding: 5rem;
+  color: #fff;
+  border-radius: .5rem;
+  margin-top: 4rem;
+}
+
+.admission-form h2 {
+  font-family: Lora, serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.admission-form p {
+  font-size: 22px;
+  width: 70%;
+  font-weight: 300 !important;
+}
+
+.admission-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admission-form form input,
+.admission-form form select {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: .25rem;
+  margin: 2rem 0;
+  font-size: 22px;
+}
+
+.admission-form form select {
+  border-right: 15px solid transparent;
+}
+
+.admission-form form label {
+  font-family: GT Walsheim Pro, sans-serif;
+  font-size: 30px;
+}
+
+.admission-form form input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.admission-form form input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.admission-form form input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.admission-form form input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     display: -webkit-box;
@@ -1004,6 +1151,19 @@ input[type="checkbox"] {
     display: block;
     margin: 1rem 0;
   }
+  .admission {
+    margin: 10rem auto;
+  }
+  .admission-header {
+    text-align: center;
+  }
+  .admission-form h2,
+  .admission-form p {
+    text-align: center;
+  }
+  .admission-form p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1015,6 +1175,9 @@ input[type="checkbox"] {
   }
   .benefit-content-box {
     width: 100%;
+  }
+  .admission-form {
+    padding: 2rem;
   }
 }
 

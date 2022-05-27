@@ -232,6 +232,26 @@
             }
         }
     }
+
+    .admission {
+        margin: 10rem auto;
+
+        &-header {
+            text-align: center;
+        }
+
+        &-form {
+
+            h2,
+            p {
+                text-align: center;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -244,6 +264,12 @@
             &-box {
                 width: 100%;
             }
+        }
+    }
+
+    .admission {
+        &-form {
+            padding: 2rem;
         }
     }
 }
