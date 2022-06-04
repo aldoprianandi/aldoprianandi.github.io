@@ -26,6 +26,10 @@
                 margin: 1rem 0;
             }
 
+            input {
+                font-family: 'Inter', sans-serif;
+            }
+
             label {
                 display: inline-block;
                 font-weight: 600;
@@ -48,7 +52,7 @@
             }
 
             input[type=text],
-            textarea {
+            input[type=email] {
                 width: 100%;
                 padding: .5rem 1rem;
                 border: none;
@@ -61,8 +65,8 @@
                 display: block;
             }
 
-            textarea {
-                font-family: 'Quicksand', sans-serif;
+            #message {
+                padding-bottom: 5rem;
             }
 
         }

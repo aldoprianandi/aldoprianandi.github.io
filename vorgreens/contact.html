@@ -41,14 +41,14 @@
                 <h5>Contact Information</h5>
                 <p>Any question or remarks? Just write us a message!</p>
             </div>
-            <form action="#">
+            <form action="" onsubmit="return validation()">
                 <div class="input-group">
                     <label for="name">Full Name</label>
                     <input type="text" name="name" id="name" placeholder="Your Full Name">
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" name="email" id="email">
                 </div>
                 <div class="input-group">
                     <label for="gender">Gender</label>
@@ -63,16 +63,17 @@
                 </div>
                 <div class="input-group">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="text" name="message" id="message">
                 </div>
                 <div class="input-group input-checkbox">
-                    <input type="checkbox" name="agree" id="agree"><label for="agree">By clicking this I am agree to
+                    <input type="checkbox" name="agree" id="agree"><label for="agree">By clicking this I am
+                        agree to
                         subscribe to VOrgreens*</label>
                 </div>
+                <div class="contact-footer">
+                    <button class="btn-primary" value="submit">Send Message</button>
+                </div>
             </form>
-            <div class="contact-footer">
-                <button class="btn-primary">Send Message</button>
-            </div>
         </div>
     </div>
 
@@ -115,6 +116,8 @@
             </div>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

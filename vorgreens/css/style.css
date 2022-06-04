@@ -744,6 +744,10 @@ input[type="checkbox"] {
   margin: 1rem 0;
 }
 
+.contact-container form input {
+  font-family: 'Inter', sans-serif;
+}
+
 .contact-container form label {
   display: inline-block;
   font-weight: 600;
@@ -782,7 +786,7 @@ input[type="checkbox"] {
 }
 
 .contact-container form input[type=text],
-.contact-container form textarea {
+.contact-container form input[type=email] {
   width: 100%;
   padding: .5rem 1rem;
   border: none;
@@ -795,8 +799,8 @@ input[type="checkbox"] {
   display: block;
 }
 
-.contact-container form textarea {
-  font-family: 'Quicksand', sans-serif;
+.contact-container form #message {
+  padding-bottom: 5rem;
 }
 
 .contact-footer {
