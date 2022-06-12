@@ -33,10 +33,36 @@
         padding: 2rem;
         border-radius: 1rem;
         background-color: $secondary-div;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: lighten($primary, 10%);
+
+            h5 {
+                color: #fff;
+            }
+
+            p {
+                color: rgba($color: #fff, $alpha: 0.6);
+            }
+
+        }
 
         h5 {
             margin-top: 2rem;
             margin-bottom: 1rem;
+            color: $primary-text;
+        }
+
+        p {
+            color: $secondary-text;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
         }
     }
 

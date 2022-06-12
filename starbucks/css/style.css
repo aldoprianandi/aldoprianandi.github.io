@@ -135,8 +135,23 @@ h5 {
   transition: all 0.3s ease;
 }
 
+.navbar ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  border-radius: 100px;
+  background-color: #007042;
+  -webkit-transition: width .3s ease-in;
+  transition: width .3s ease-in;
+}
+
 .navbar ul li a:hover {
   color: #007042;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
 }
 
 .navbar .menu-btn {
@@ -255,11 +270,37 @@ input[type="checkbox"] {
   padding: 2rem;
   border-radius: 1rem;
   background-color: #F2F2F2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.products-box:hover {
+  background-color: #00a360;
+}
+
+.products-box:hover h5 {
+  color: #fff;
+}
+
+.products-box:hover p {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .products-box h5 {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: #1C1C1C;
+}
+
+.products-box p {
+  color: #717171;
+}
+
+.products-box a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .products-footer {
@@ -385,22 +426,24 @@ input[type="checkbox"] {
   background-color: #007042;
 }
 
+.leader-header p#header-description {
+  width: 60%;
+  margin: auto;
+}
+
 .leader-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
 }
 
 .leader-box {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -ms-flex-preferred-size: 18%;
       flex-basis: 18%;
   margin-bottom: 2rem;
@@ -420,6 +463,15 @@ input[type="checkbox"] {
 .leader-footer {
   text-align: center;
   margin-top: 2rem;
+}
+
+.leader #leader-page-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.leader #leader-page-header h2::after {
+  margin: 1rem auto;
 }
 
 .milestone {
@@ -533,6 +585,148 @@ input[type="checkbox"] {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
+}
+
+.gift-container {
+  width: 90%;
+  margin: auto;
+}
+
+.gift-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gift-header h2::after {
+  content: '';
+  height: 2px;
+  width: 30%;
+  margin: auto;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  display: block;
+  background-color: #007042;
+}
+
+.gift-header #header-description {
+  width: 60%;
+  margin: auto;
+}
+
+.gift-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.gift-box {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #F2F2F2;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  text-align: center;
+}
+
+.gift-box h5 {
+  margin-top: 1rem;
+}
+
+.gift-box img {
+  width: 100%;
+}
+
+.gift-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.news-container {
+  width: 90%;
+  margin: auto;
+}
+
+.news-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.news-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.news-header h2::after {
+  content: '';
+  height: 2px;
+  width: 25%;
+  margin: auto;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  display: block;
+  background-color: #007042;
+}
+
+.news-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.news-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.news-left h5 a {
+  text-decoration: none;
+  color: #1C1C1C;
+  font-family: 'Playfair Display', sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.news-left h5 a:hover {
+  color: #007042;
+}
+
+.news-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.news-right img {
+  border-radius: 1rem;
+  width: 80%;
 }
 
 @media screen and (max-width: 768px) {
