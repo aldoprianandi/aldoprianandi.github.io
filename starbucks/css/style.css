@@ -701,6 +701,7 @@ input[type="checkbox"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 1rem 0;
 }
 
 .news-left {
@@ -735,6 +736,15 @@ input[type="checkbox"] {
           flex: 1;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+}
+
+.news-right a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .news-right img {
