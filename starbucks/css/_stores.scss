@@ -4,6 +4,21 @@
         margin: auto;
     }
 
+    #stores-page-header {
+        text-align: center;
+
+        h2 {
+            &::after {
+                margin: 1rem auto;
+            }
+        }
+    }
+
+    #header-description {
+        width: 80%;
+        margin: auto;
+    }
+
     &-header {
 
         h2 {

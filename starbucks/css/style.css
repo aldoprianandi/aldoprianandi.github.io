@@ -361,6 +361,19 @@ input[type="checkbox"] {
   margin: auto;
 }
 
+.stores #stores-page-header {
+  text-align: center;
+}
+
+.stores #stores-page-header h2::after {
+  margin: 1rem auto;
+}
+
+.stores #header-description {
+  width: 80%;
+  margin: auto;
+}
+
 .stores-header h2::after {
   content: '';
   height: 2px;
