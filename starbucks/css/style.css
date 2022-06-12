@@ -613,7 +613,7 @@ input[type="checkbox"] {
 .menu-header h2::after {
   content: '';
   height: 2px;
-  width: 30%;
+  width: 25%;
   margin: auto;
   margin-top: .5rem;
   margin-bottom: 1rem;
@@ -722,6 +722,10 @@ input[type="checkbox"] {
 
 .news-left h5 a:hover {
   color: #007042;
+}
+
+.news-left p {
+  margin-top: 1rem;
 }
 
 .news-right {
