@@ -155,6 +155,10 @@
         }
     }
 
+    .menu {
+        padding-top: 9rem;
+    }
+
     .mission,
     .stores,
     .leader {
@@ -232,6 +236,53 @@
                 li {
                     list-style: none;
                 }
+            }
+        }
+    }
+
+    .about {
+        padding-top: 9rem;
+
+        &-container {
+            width: 80%;
+        }
+
+        &-content {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .news {
+        padding-top: 9rem;
+
+        &-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-left {
+            order: 2;
+        }
+
+        &-right {
+            order: 1;
+
+            img {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .leader {
+        padding-top: 9rem;
+
+        &-header {
+            p#header-description {
+                margin-top: 1rem;
+                width: 100%;
             }
         }
     }
