@@ -106,3 +106,38 @@ nav .number {
 footer {
   background-color: #c6c6c6;
 }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 10px;
+  }
+  .pbig {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
