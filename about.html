@@ -28,6 +28,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/all.css" />
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Akhir AOS -->
+
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +53,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary my-3">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img
                 src="assets/logo.png"
                 alt=""
@@ -100,14 +106,14 @@
 
       <section class="about-pg" style="margin: 60px 0">
         <div class="container">
-          <div class="row">
+          <div class="row" data-aos="fade-up">
             <div class="col mb-5 text-center">
               <span class="section-number">02.</span>
               <h2>more about me</h2>
             </div>
           </div>
 
-          <div class="row justify-content-center">
+          <div class="row justify-content-center" data-aos="zoom-in">
             <div class="col-3">
               <img
                 src="/assets/about.png"
@@ -116,7 +122,10 @@
               />
             </div>
           </div>
-          <div class="row justify-content-center text-center">
+          <div
+            class="row justify-content-center text-center"
+            data-aos="zoom-in"
+          >
             <div class="col">
               <h4 class="mt-5 mb-3">Aldo Prianandi</h4>
               <p class="text-white bg-dark d-inline p-2 rounded">
@@ -126,33 +135,42 @@
           </div>
 
           <div class="row my-5">
-            <div class="col">
+            <div class="col" data-aos="fade-right">
               <h5>A dedicated Front-end Web Developer;</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                ac placerat enim. Nulla feugiat urna turpis, vel hendrerit risus
-                viverra eu. Sed enim lorem, consectetur sit amet eros ornare,
-                ultrices congue justo. Fusce tincidunt justo nec tellus
-                interdum, id congue mi congue.
+                Welcome to my portfolio! I'm a dedicated designer and web
+                developer, currently a student at BINUS University. My journey
+                in design and development is marked by a continuous pursuit of
+                knowledge and skill enhancement. My passion lies in creating
+                visually captivating, user-friendly digital experiences. I
+                specialize in HTML, CSS, JavaScript, React, Tailwind, and SCSS,
+                and excel in crafting dynamic interfaces with clean code. I stay
+                up-to-date with industry trends and employ cutting-edge tools.
+                My academic and project experiences have reinforced my abilities
+                and commitment to this field. I'm eager to explore internships
+                and further learning opportunities to advance my professional
+                growth.
+
                 <br />
                 <br />
-                Sed feugiat lorem vel tortor vulputate, at mollis velit auctor.
-                Etiam quis tortor non ex auctor ullamcorper sed nec metus. Donec
-                ac orci dictum, dictum neque iaculis, dictum elit. Donec
-                ullamcorper libero sapien, imperdiet elementum erat tincidunt
-                sit amet. Nulla et dignissim mauris. Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Nesciunt animi ut atque. Assumenda
-                ipsam ut cum accusamus repudiandae dolore labore maiores aut,
-                veniam hic esse eaque voluptate, corporis unde. Inventore!
+                Outside of my studies, I enjoy experimenting with design tools
+                and staying informed about evolving web development trends. I'm
+                dedicated to expanding my skills to consistently deliver
+                exceptional results to clients and users."
               </p>
             </div>
           </div>
 
           <div class="row">
-            <h5 class="text-dark">// Tech Stack //</h5>
+            <h5 class="text-dark" data-aos="fade-right">// Tech Stack //</h5>
             <div class="col">
               <div class="row justify-content-start">
-                <div class="col-lg-1 col-md-2 col-3 mt-4">
+                <div
+                  class="col-lg-1 col-md-2 col-3 mt-4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="800"
+                >
                   <div class="card rounded-3 border-1 shadow">
                     <img
                       src="assets/skill/html-skill.png"
@@ -162,7 +180,12 @@
                   </div>
                 </div>
 
-                <div class="col-lg-1 col-md-2 col-3 mt-4">
+                <div
+                  class="col-lg-1 col-md-2 col-3 mt-4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="800"
+                >
                   <div class="card rounded-3 border-1 shadow">
                     <img
                       src="assets/skill/css-skill.png"
@@ -172,7 +195,12 @@
                   </div>
                 </div>
 
-                <div class="col-lg-1 col-md-2 col-3 mt-4">
+                <div
+                  class="col-lg-1 col-md-2 col-3 mt-4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="800"
+                >
                   <div class="card rounded-3 border-1 shadow">
                     <img
                       src="assets/skill/js-skill.png"
@@ -182,7 +210,12 @@
                   </div>
                 </div>
 
-                <div class="col-lg-1 col-md-2 col-3 mt-4">
+                <div
+                  class="col-lg-1 col-md-2 col-3 mt-4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="800"
+                >
                   <div class="card rounded-3 border-1 shadow">
                     <img
                       src="assets/skill/bs-skill.png"
@@ -192,7 +225,12 @@
                   </div>
                 </div>
 
-                <div class="col-lg-1 col-md-2 col-3 mt-4">
+                <div
+                  class="col-lg-1 col-md-2 col-3 mt-4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="800"
+                >
                   <div class="card rounded-3 border-1 shadow">
                     <img
                       src="assets/skill/fg-skill.png"
@@ -202,7 +240,12 @@
                   </div>
                 </div>
 
-                <div class="col-lg-1 col-md-2 col-3 mt-4">
+                <div
+                  class="col-lg-1 col-md-2 col-3 mt-4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="800"
+                >
                   <div class="card rounded-3 border-1 shadow">
                     <img
                       src="assets/skill/git-skill.png"
@@ -212,7 +255,12 @@
                   </div>
                 </div>
 
-                <div class="col-lg-1 col-md-2 col-3 mt-4">
+                <div
+                  class="col-lg-1 col-md-2 col-3 mt-4"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="800"
+                >
                   <div class="card rounded-3 border-1 shadow">
                     <img
                       src="assets/skill/gh-skill.png"
@@ -225,11 +273,11 @@
             </div>
           </div>
 
-          <div class="row my-3">
+          <div class="row my-3 mt-5" data-aos="fade-right">
             <h5>Education</h5>
           </div>
 
-          <div class="row align-items-center">
+          <div class="row align-items-center" data-aos="fade-right">
             <div class="col-1">
               <img
                 src="assets/binus.webp"
@@ -247,12 +295,12 @@
             </div>
           </div>
 
-          <div class="row mt-5 mb-3">
+          <div class="row mt-5 mb-3" data-aos="fade-right">
             <h5>Hit Me Up!</h5>
           </div>
 
           <div class="row">
-            <div class="col d-flex align-items-center">
+            <div class="col d-flex align-items-center" data-aos="zoom-in">
               <i class="fa-solid fa-envelope fa-lg p-2 rounded-3 shadow-lg"></i>
               <a
                 href="mailto:aldoprianandii@gmail.com"
@@ -263,7 +311,10 @@
               >
             </div>
 
-            <div class="col d-flex align-items-center justify-content-center">
+            <div
+              class="col d-flex align-items-center justify-content-center"
+              data-aos="zoom-in"
+            >
               <i
                 class="fa-brands fa-linkedin fa-lg p-2 rounded-3 shadow-lg"
               ></i>
@@ -278,7 +329,10 @@
               >
             </div>
 
-            <div class="col d-flex align-items-center justify-content-end">
+            <div
+              class="col d-flex align-items-center justify-content-end"
+              data-aos="zoom-in"
+            >
               <i
                 class="fa-solid fa-map-location-dot fa-lg p-2 rounded-3 shadow-lg"
               ></i>
@@ -351,6 +405,9 @@
     ></script>
 
     <script src="js/all.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
