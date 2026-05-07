@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Public work by Aldo Prianandi, including Cinethetic and sanitized notes on private workflow systems."
+      content="Selected public work by Aldo Prianandi, led by Cinethetic."
     />
     <title>Work | Aldo Prianandi</title>
     <link rel="icon" href="assets/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -48,111 +48,82 @@
     </header>
 
     <main>
-      <section class="page-hero" aria-labelledby="work-title">
-        <p class="eyebrow">Selected public work</p>
-        <h1 id="work-title">Focused public work over old demos.</h1>
+      <section class="page-intro" aria-labelledby="work-title">
+        <p class="kicker">Work</p>
+        <h1 id="work-title">Selected public work.</h1>
         <p>
-          Older student-era static sites still exist as history. The current
-          public surface is narrower, cleaner, and closer to how I operate now.
+          Most of my practical work is private or internal. This page only keeps
+          the public pieces that still fit the direction.
         </p>
       </section>
 
-      <section class="case-study" aria-labelledby="cinethetic-title">
-        <div class="section-kicker">01.</div>
-        <div class="case-main">
-          <div>
-            <p class="eyebrow">Public project</p>
-            <h2 id="cinethetic-title">Cinethetic</h2>
-            <p>
-              A programmable Remotion carousel renderer with reusable themes and
-              JSON-driven slide content. It is built for repeatable social
-              content: editorial posts, product explainers, launch notes, and
-              structured visual storytelling.
-            </p>
-          </div>
-
-          <div class="case-meta" aria-label="Cinethetic details">
-            <dl>
-              <div>
-                <dt>Repository</dt>
-                <dd>
-                  <a href="https://github.com/aldoprianandi/cinethetic"
-                    >github.com/aldoprianandi/cinethetic</a
-                  >
-                </dd>
-              </div>
-              <div>
-                <dt>Stack</dt>
-                <dd>TypeScript, React, Remotion</dd>
-              </div>
-              <div>
-                <dt>Why it matters</dt>
-                <dd>
-                  It packages a repeatable creative workflow into a documented
-                  public tool.
-                </dd>
-              </div>
-              <div>
-                <dt>Status</dt>
-                <dd>Public, MIT licensed, CI checked</dd>
-              </div>
-            </dl>
+      <section class="project-detail" aria-labelledby="cinethetic-title">
+        <div class="section-head">
+          <p class="section-number">01</p>
+          <h2 id="cinethetic-title">Cinethetic</h2>
+        </div>
+        <div class="project-body">
+          <p>
+            A Remotion carousel renderer for producing structured social content
+            from reusable themes and JSON slide data.
+          </p>
+          <dl class="meta-list">
+            <div>
+              <dt>Stack</dt>
+              <dd>TypeScript, React, Remotion</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Public, documented, CI checked</dd>
+            </div>
+            <div>
+              <dt>Use</dt>
+              <dd>Editorial posts, product explainers, launch notes</dd>
+            </div>
+          </dl>
+          <div class="link-row">
+            <a href="https://github.com/aldoprianandi/cinethetic">GitHub</a>
           </div>
         </div>
       </section>
 
       <section class="section-block" aria-labelledby="private-title">
-        <div class="section-kicker">02.</div>
-        <div class="section-two-col">
-          <h2 id="private-title">Private work, public shape.</h2>
-          <div class="lined-list">
-            <article>
-              <h3>Browser automations</h3>
-              <p>
-                Workflows that reduce repeated clicking, checking, filtering,
-                and browser-based operations.
-              </p>
-            </article>
-            <article>
-              <h3>Internal dashboards</h3>
-              <p>
-                Small operational views that make status, queues, and repeated
-                decisions easier to scan.
-              </p>
-            </article>
-            <article>
-              <h3>Content pipelines</h3>
-              <p>
-                Reusable systems for courses, ebooks, social content, media
-                assets, and creative production.
-              </p>
-            </article>
-            <article>
-              <h3>Agent-assisted tooling</h3>
-              <p>
-                Scripts and utilities shaped around AI coding assistants,
-                verification loops, and repeatable setup.
-              </p>
-            </article>
-          </div>
+        <div class="section-head">
+          <p class="section-number">02</p>
+          <h2 id="private-title">Private Work</h2>
+        </div>
+        <div class="row-list">
+          <article>
+            <h3>Browser tasks</h3>
+            <p>
+              Repeated checking, filtering, form work, and operational browsing.
+            </p>
+          </article>
+          <article>
+            <h3>Internal tools</h3>
+            <p>
+              Small dashboards, scripts, and helpers around existing workflows.
+            </p>
+          </article>
+          <article>
+            <h3>Content pipelines</h3>
+            <p>
+              Systems for reusable creative output, courses, and social assets.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section class="section-block" aria-labelledby="old-title">
-        <div class="section-kicker">03.</div>
-        <div class="section-two-col">
-          <h2 id="old-title">Earlier experiments.</h2>
-          <div class="statement-stack">
-            <p>
-              The older HTML and CSS projects were useful practice from my
-              university period. They are not the main proof of my current
-              direction.
-            </p>
-            <p>
-              I keep the lesson, not the old framing: make useful things, clean
-              up the public surface, and show only what supports the next step.
-            </p>
-          </div>
+      <section class="section-block" aria-labelledby="archive-title">
+        <div class="section-head">
+          <p class="section-number">03</p>
+          <h2 id="archive-title">Archive</h2>
+        </div>
+        <div class="text-stack">
+          <p>
+            The older university-era static sites were useful practice, but they
+            are not the main proof for this version of the site.
+          </p>
         </div>
       </section>
     </main>
