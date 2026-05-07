@@ -377,7 +377,8 @@ p {
 }
 
 .ticker {
-  margin: 0 calc((100vw - var(--page)) / -2);
+  margin: 0;
+  width: 100%;
   overflow: hidden;
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
@@ -777,10 +778,6 @@ p {
     right: -34px;
     top: 66px;
     font-size: 4.4rem;
-  }
-
-  .ticker {
-    margin-inline: -14px;
   }
 
   .ticker-track {
