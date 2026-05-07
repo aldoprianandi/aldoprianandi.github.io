@@ -493,7 +493,8 @@ p {
 }
 
 .work-rows article,
-.proof-ledger article {
+.proof-ledger article,
+.background-ledger article {
   display: grid;
   grid-template-columns: 104px minmax(0, 1fr);
   gap: 8px clamp(18px, 3vw, 34px);
@@ -503,7 +504,8 @@ p {
 }
 
 .work-rows article:last-child,
-.proof-ledger article:last-child {
+.proof-ledger article:last-child,
+.background-ledger article:last-child {
   border-bottom: 0;
 }
 
@@ -516,7 +518,8 @@ p {
 }
 
 .work-rows h3,
-.proof-ledger h3 {
+.proof-ledger h3,
+.background-ledger h3 {
   grid-column: 2;
   max-width: 20ch;
   font-size: clamp(1.48rem, 2.4vw, 2.24rem);
@@ -525,17 +528,20 @@ p {
 
 .work-rows p:not(.row-tag),
 .proof-ledger p:not(.row-tag),
+.background-ledger p:not(.row-tag),
 .note-stack p {
   margin-bottom: 0;
 }
 
 .work-rows p:not(.row-tag),
-.proof-ledger p:not(.row-tag) {
+.proof-ledger p:not(.row-tag),
+.background-ledger p:not(.row-tag) {
   grid-column: 2;
   max-width: 58ch;
 }
 
-.proof-ledger {
+.proof-ledger,
+.background-ledger {
   display: grid;
   border-top: 2px solid var(--ink);
 }
@@ -838,7 +844,8 @@ pre {
     grid-template-columns: 98px minmax(0, 1fr);
   }
 
-  .proof-ledger article {
+  .proof-ledger article,
+  .background-ledger article {
     grid-template-columns: 98px minmax(0, 1fr);
   }
 
@@ -846,7 +853,8 @@ pre {
     grid-column: 2;
   }
 
-  .proof-ledger p:not(.row-tag) {
+  .proof-ledger p:not(.row-tag),
+  .background-ledger p:not(.row-tag) {
     grid-column: 2;
   }
 
@@ -981,20 +989,24 @@ pre {
   }
 
   .work-rows article,
-  .proof-ledger article {
+  .proof-ledger article,
+  .background-ledger article {
     grid-template-columns: 1fr;
     gap: 8px;
   }
 
   .work-rows h3,
   .proof-ledger h3,
+  .background-ledger h3,
   .proof-ledger p:not(.row-tag),
+  .background-ledger p:not(.row-tag),
   .work-rows article p:not(.row-tag) {
     grid-column: auto;
   }
 
   .work-rows h3,
-  .proof-ledger h3 {
+  .proof-ledger h3,
+  .background-ledger h3 {
     max-width: 100%;
   }
 
