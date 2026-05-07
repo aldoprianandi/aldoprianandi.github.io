@@ -280,7 +280,6 @@ p {
 .page-hero p,
 .project-copy p,
 .case-body > p,
-.archive-note p,
 .demo-intro {
   max-width: 54ch;
   color: var(--ink);
@@ -342,7 +341,7 @@ p {
 }
 
 .identity-plate::after {
-  content: "PRIVATE";
+  content: "SYSTEM";
   position: absolute;
   right: -42px;
   top: 70px;
@@ -444,7 +443,6 @@ p {
 .split-section,
 .project-callout,
 .case-study,
-.archive-note,
 .tool-cloud,
 .demo-section,
 .contact-panel {
@@ -770,10 +768,6 @@ pre code {
   --tilt: -2deg;
 }
 
-.archive-note {
-  max-width: 780px;
-}
-
 .contact-panel {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.7fr);
@@ -815,7 +809,6 @@ pre code {
   .split-section,
   .project-callout,
   .case-study,
-  .archive-note,
   .tool-cloud,
   .contact-panel {
     animation: enter 720ms var(--ease) both;
@@ -967,8 +960,7 @@ pre code {
   .hero-lede,
   .page-hero p,
   .project-copy p,
-  .case-body > p,
-  .archive-note p {
+  .case-body > p {
     font-size: 1.16rem;
   }
 
@@ -991,7 +983,6 @@ pre code {
   .split-section,
   .project-callout,
   .case-study,
-  .archive-note,
   .tool-cloud,
   .demo-section,
   .contact-panel {
