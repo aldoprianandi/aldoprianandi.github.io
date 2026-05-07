@@ -19,3 +19,4 @@ There is no build step. GitHub Pages serves the files directly from the reposito
 - `projects.html`: selected public work, led by Cinethetic
 - `css/workbench-layout.css`: visual system and responsive layout
 - `assets/logo.png`: site mark
+- `assets/cinethetic/`: compressed public demo previews from Cinethetic

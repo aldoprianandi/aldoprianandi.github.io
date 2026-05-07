@@ -76,6 +76,19 @@
               A Remotion carousel renderer for producing structured social
               content from reusable themes and JSON slide data.
             </p>
+            <figure class="case-hero-image">
+              <img
+                src="assets/cinethetic/demo-manifest-preview.jpg"
+                width="1200"
+                height="675"
+                loading="lazy"
+                alt="Manifest theme preview from the public Cinethetic demo"
+              />
+              <figcaption>
+                The public demo is generic on purpose: safe content, visible
+                renderer, no private workflow.
+              </figcaption>
+            </figure>
             <dl class="case-meta">
               <div>
                 <dt>Stack</dt>
@@ -84,6 +97,10 @@
               <div>
                 <dt>Status</dt>
                 <dd>Public, documented, CI checked</dd>
+              </div>
+              <div>
+                <dt>Input</dt>
+                <dd>JSON slide data, typed theme objects</dd>
               </div>
               <div>
                 <dt>Use</dt>
@@ -98,9 +115,82 @@
           </div>
         </section>
 
-        <section class="split-section" aria-labelledby="private-title">
+        <section
+          class="split-section demo-section"
+          aria-labelledby="demo-title"
+        >
           <div class="section-label">
             <span>02</span>
+            <h2 id="demo-title">Demo proof</h2>
+          </div>
+          <div class="demo-board">
+            <p class="demo-intro">
+              The same demo carousel is registered in four visual variants.
+              Content stays stable while the renderer changes the presentation.
+            </p>
+            <div class="theme-grid" aria-label="Cinethetic theme previews">
+              <figure>
+                <img
+                  src="assets/cinethetic/demo-manifest-preview.jpg"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Manifest variation preview"
+                />
+                <figcaption>Manifest</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/cinethetic/demo-terminal-preview.jpg"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Terminal variation preview"
+                />
+                <figcaption>Terminal</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/cinethetic/demo-brutalist-preview.jpg"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Brutalist variation preview"
+                />
+                <figcaption>Brutalist</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/cinethetic/demo-neoprint-preview.jpg"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  alt="Neoprint variation preview"
+                />
+                <figcaption>Neoprint</figcaption>
+              </figure>
+            </div>
+            <div class="code-ledger">
+              <div>
+                <p class="row-tag">Content</p>
+                <pre><code>{
+  "type": "text-title",
+  "title": "Build carousels like design systems."
+}</code></pre>
+              </div>
+              <div>
+                <p class="row-tag">Render</p>
+                <pre><code>npm install
+npm run compositions
+npm run render:demo</code></pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="split-section" aria-labelledby="private-title">
+          <div class="section-label">
+            <span>03</span>
             <h2 id="private-title">Private work types</h2>
           </div>
           <div class="work-rows">
