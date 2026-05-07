@@ -235,6 +235,7 @@ h2,
 h3,
 p {
   margin-top: 0;
+  overflow-wrap: break-word;
 }
 
 h1,
@@ -309,16 +310,19 @@ p {
 }
 
 .identity-plate {
-  min-height: clamp(330px, 34vw, 460px);
+  min-height: clamp(360px, 36vw, 470px);
   padding: clamp(24px, 4vw, 44px);
   border: 2px solid var(--ink);
   background:
     linear-gradient(135deg, oklch(0.14 0.012 250), oklch(0.21 0.022 250)),
     var(--ink);
   color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2.8vw, 28px);
   position: relative;
+  isolation: isolate;
   overflow: hidden;
-  transform: rotate(1.2deg);
   box-shadow: 14px 14px 0 var(--red);
 }
 
@@ -328,6 +332,7 @@ p {
   inset: 16px;
   border: 1px solid oklch(0.985 0.011 95 / 0.24);
   pointer-events: none;
+  z-index: -1;
 }
 
 .identity-plate::after {
@@ -340,10 +345,11 @@ p {
   font-size: clamp(4.5rem, 8vw, 7rem);
   font-weight: 700;
   transform: rotate(90deg);
+  z-index: -1;
 }
 
 .plate-mark {
-  width: min(34%, 148px);
+  width: min(30%, 118px);
   margin-left: auto;
   filter: invert(1);
   opacity: 0.94;
@@ -351,29 +357,47 @@ p {
 }
 
 .plate-kicker {
-  margin: clamp(28px, 5vw, 54px) 0 12px;
+  margin: auto 0 0;
   color: oklch(0.82 0.045 150);
   font-size: 0.82rem;
   font-weight: 700;
 }
 
-.plate-title {
-  max-width: 13ch;
+.plate-steps {
+  display: grid;
+  gap: 9px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   color: var(--cream);
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: clamp(1.34rem, 2.45vw, 2.3rem);
   font-weight: 800;
-  line-height: 0.92;
+  line-height: 0.94;
+}
+
+.plate-steps li {
+  display: grid;
+  grid-template-columns: 3.5ch minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+
+.plate-steps span {
+  color: oklch(0.82 0.045 150);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 700;
 }
 
 .plate-rail {
-  position: absolute;
-  left: clamp(24px, 4vw, 44px);
-  right: clamp(24px, 4vw, 44px);
-  bottom: clamp(22px, 3vw, 36px);
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  padding-top: clamp(12px, 2vw, 18px);
+  margin-top: clamp(4px, 1vw, 10px);
+  border-top: 1px solid oklch(0.985 0.011 95 / 0.2);
   color: oklch(0.985 0.011 95 / 0.72);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
 }
 
 .ticker {
@@ -425,9 +449,20 @@ p {
 .project-callout,
 .case-study {
   display: grid;
-  grid-template-columns: minmax(190px, 0.42fr) minmax(0, 1fr);
   gap: clamp(28px, 6vw, 96px);
   align-items: start;
+}
+
+.split-section {
+  grid-template-columns: minmax(0, 390px) minmax(0, 1fr);
+}
+
+.split-section > *,
+.project-callout > *,
+.case-study > *,
+.contact-panel > *,
+.hero > * {
+  min-width: 0;
 }
 
 .section-label {
@@ -442,6 +477,12 @@ p {
   font-weight: 700;
 }
 
+.section-label h2 {
+  max-width: 12.5ch;
+  font-size: clamp(2.35rem, 3.8vw, 4.05rem);
+  line-height: 0.92;
+}
+
 .work-rows {
   display: grid;
   border-top: 2px solid var(--ink);
@@ -449,9 +490,9 @@ p {
 
 .work-rows article {
   display: grid;
-  grid-template-columns: 118px minmax(0, 0.52fr) minmax(0, 1fr);
-  gap: clamp(16px, 3vw, 34px);
-  align-items: baseline;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 8px clamp(18px, 3vw, 34px);
+  align-items: start;
   padding: clamp(22px, 3.8vw, 42px) 0;
   border-bottom: 1px solid var(--line);
 }
@@ -465,11 +506,24 @@ p {
   color: var(--blue);
   font-size: 0.8rem;
   font-weight: 700;
+  padding-top: 0.28em;
+}
+
+.work-rows h3 {
+  grid-column: 2;
+  max-width: 20ch;
+  font-size: clamp(1.48rem, 2.4vw, 2.24rem);
+  line-height: 1.02;
 }
 
 .work-rows p:not(.row-tag),
 .note-stack p {
   margin-bottom: 0;
+}
+
+.work-rows p:not(.row-tag) {
+  grid-column: 2;
+  max-width: 58ch;
 }
 
 .note-stack {
@@ -485,15 +539,21 @@ p {
 }
 
 .project-callout {
-  align-items: end;
+  grid-template-columns: 1fr;
+  gap: clamp(24px, 4vw, 42px);
+  align-items: start;
 }
 
 .project-callout h2,
 .case-title h2 {
   color: var(--red);
+  max-width: 100%;
+  font-size: clamp(3.15rem, 9vw, 6.4rem);
+  line-height: 0.9;
 }
 
 .project-copy {
+  justify-self: end;
   max-width: 680px;
   padding: clamp(24px, 4vw, 38px);
   border: 2px solid var(--ink);
@@ -513,7 +573,14 @@ p {
 }
 
 .case-body {
+  justify-self: end;
+  width: min(100%, 740px);
   max-width: 740px;
+}
+
+.case-study {
+  grid-template-columns: 1fr;
+  gap: clamp(24px, 4vw, 44px);
 }
 
 .case-meta {
@@ -665,7 +732,6 @@ p {
 
   .identity-plate {
     max-width: 620px;
-    transform: rotate(0.5deg);
   }
 }
 
@@ -798,8 +864,17 @@ p {
     gap: 8px;
   }
 
+  .work-rows h3,
   .work-rows article p:not(.row-tag) {
     grid-column: auto;
+  }
+
+  .work-rows h3 {
+    max-width: 100%;
+  }
+
+  .row-tag {
+    padding-top: 0;
   }
 
   .project-copy {
