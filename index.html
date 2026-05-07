@@ -5,138 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Aldo Prianandi builds small tools, browser automations, and content systems for repetitive workflows."
+      content="Aldo Prianandi builds practical tools, browser automations, and content systems for repetitive workflows."
     />
+    <meta name="theme-color" content="#f4ead8" />
     <title>Aldo Prianandi</title>
     <link rel="icon" href="assets/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand-mark" href="index.html" aria-label="Aldo Prianandi home">
-        <img src="assets/logo.png" alt="Aldo Prianandi monogram" />
-      </a>
-
-      <input
-        class="nav-check"
-        type="checkbox"
-        id="nav-check"
-        aria-label="Toggle navigation"
-      />
-      <label class="nav-button" for="nav-check">
-        <span class="nav-button-text">Menu</span>
-        <span class="nav-line" aria-hidden="true"></span>
-        <span class="nav-line" aria-hidden="true"></span>
-      </label>
-
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a aria-current="page" href="index.html"
-          ><span>//</span> home <small>01</small></a
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a
+          class="brand-mark"
+          href="index.html"
+          aria-label="Aldo Prianandi home"
         >
-        <a href="about.html"><span>//</span> about <small>02</small></a>
-        <a href="projects.html"><span>//</span> work <small>03</small></a>
-        <a href="mailto:aldoprianandii@gmail.com"
-          ><span>//</span> contact <small>04</small></a
-        >
-      </nav>
-    </header>
+          <img
+            src="assets/logo.png"
+            width="474"
+            height="490"
+            alt="Aldo Prianandi monogram"
+            fetchpriority="high"
+          />
+        </a>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-main">
-          <p class="kicker">Based in Indonesia</p>
-          <h1 id="hero-title">Aldo Prianandi</h1>
-          <p class="intro">
-            I make small tools, browser automations, and content systems for
-            repetitive work that should not stay manual.
-          </p>
-        </div>
+        <input
+          class="nav-check"
+          type="checkbox"
+          id="nav-check"
+          aria-label="Toggle navigation"
+        />
+        <label class="nav-button" for="nav-check">
+          <span class="nav-button-text">Menu</span>
+          <span class="nav-line" aria-hidden="true"></span>
+          <span class="nav-line" aria-hidden="true"></span>
+        </label>
 
-        <aside class="quick-note" aria-label="Current notes">
-          <p>Public work stays small on purpose.</p>
-          <a href="projects.html">See selected work</a>
-        </aside>
-      </section>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a aria-current="page" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Work</a>
+          <a href="mailto:aldoprianandii@gmail.com">Contact</a>
+        </nav>
+      </header>
 
-      <section class="section-block" aria-labelledby="focus-title">
-        <div class="section-head">
-          <p class="section-number">01</p>
-          <h2 id="focus-title">Focus</h2>
-        </div>
-        <div class="row-list">
-          <article>
-            <h3>Browser automation</h3>
-            <p>
-              Turn repeated clicking, checking, and browser tasks into tools.
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Aldo Prianandi / Indonesia</p>
+            <h1 id="hero-title">Small tools for work that repeats.</h1>
+            <p class="hero-lede">
+              I make browser automations, internal utilities, and content
+              systems around tasks that keep coming back.
             </p>
-          </article>
-          <article>
-            <h3>Internal utilities</h3>
-            <p>
-              Build small helpers for messy workflows, queues, and operations.
-            </p>
-          </article>
-          <article>
-            <h3>Content systems</h3>
-            <p>
-              Shape repeatable ways to produce carousels, course assets, and
-              media.
-            </p>
-          </article>
-        </div>
-      </section>
+            <div class="hero-links" aria-label="Primary links">
+              <a href="projects.html">Selected work</a>
+              <a href="mailto:aldoprianandii@gmail.com">Email</a>
+            </div>
+          </div>
 
-      <section class="work-highlight" aria-labelledby="cinethetic-title">
-        <div class="section-head">
-          <p class="section-number">02</p>
-          <h2 id="cinethetic-title">Cinethetic</h2>
-        </div>
-        <div class="work-copy">
-          <p>
-            A public Remotion project for turning structured content into social
-            carousel videos. It is the cleanest example of my current public
-            work.
-          </p>
-          <div class="link-row">
-            <a href="https://github.com/aldoprianandi/cinethetic">GitHub</a>
-            <a href="projects.html">Project notes</a>
+          <aside class="identity-plate" aria-label="Working notes">
+            <div class="plate-mark">
+              <img
+                src="assets/logo.png"
+                width="474"
+                height="490"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+            <p class="plate-kicker">working surface</p>
+            <p class="plate-title">repeat -> tool -> verify -> keep private</p>
+            <div class="plate-rail" aria-hidden="true">
+              <span>browser loops</span>
+              <span>render pipelines</span>
+              <span>internal helpers</span>
+            </div>
+          </aside>
+        </section>
+
+        <div class="ticker" aria-hidden="true">
+          <div class="ticker-track">
+            <span>browser automation</span>
+            <span>private workflows</span>
+            <span>content systems</span>
+            <span>public cleanup</span>
+            <span>browser automation</span>
+            <span>private workflows</span>
+            <span>content systems</span>
+            <span>public cleanup</span>
           </div>
         </div>
-      </section>
 
-      <section class="section-block" aria-labelledby="style-title">
-        <div class="section-head">
-          <p class="section-number">03</p>
-          <h2 id="style-title">Working Style</h2>
-        </div>
-        <div class="text-stack">
-          <p>Start from a real recurring problem.</p>
-          <p>Use AI and tools heavily, but judge the work by what runs.</p>
-          <p>
-            Keep private workflow details private, publish only what is safe.
-          </p>
-        </div>
-      </section>
+        <section class="split-section" aria-labelledby="focus-title">
+          <div class="section-label">
+            <span>01</span>
+            <h2 id="focus-title">What I actually do</h2>
+          </div>
+          <div class="work-rows">
+            <article>
+              <p class="row-tag">Browser</p>
+              <h3>Reduce repeated web work.</h3>
+              <p>Checking, filtering, filling, comparing, and QA loops.</p>
+            </article>
+            <article>
+              <p class="row-tag">Internal</p>
+              <h3>Build small utilities around real workflows.</h3>
+              <p>
+                Scripts, lightweight dashboards, and tools people can reuse.
+              </p>
+            </article>
+            <article>
+              <p class="row-tag">Content</p>
+              <h3>Make production less manual.</h3>
+              <p>
+                Reusable systems for carousels, course material, and media
+                assets.
+              </p>
+            </article>
+          </div>
+        </section>
 
-      <section class="contact-strip" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <div class="link-row">
-          <a href="mailto:aldoprianandii@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/aldoprianandi">LinkedIn</a>
-          <a href="https://github.com/aldoprianandi">GitHub</a>
-        </div>
-      </section>
-    </main>
+        <section class="project-callout" aria-labelledby="cinethetic-title">
+          <div>
+            <p class="eyebrow">Public project</p>
+            <h2 id="cinethetic-title">Cinethetic</h2>
+          </div>
+          <div class="project-copy">
+            <p>
+              A Remotion carousel renderer that turns structured content into
+              reusable social slides. Public because the workflow is clean
+              enough to show.
+            </p>
+            <a href="https://github.com/aldoprianandi/cinethetic"
+              >View repository</a
+            >
+          </div>
+        </section>
 
-    <footer class="site-footer">
-      <span>Aldo Prianandi</span>
-      <span>2026</span>
-    </footer>
+        <section class="split-section" aria-labelledby="style-title">
+          <div class="section-label">
+            <span>02</span>
+            <h2 id="style-title">How I work</h2>
+          </div>
+          <div class="note-stack">
+            <p>Start with the annoying part of the process.</p>
+            <p>
+              Use AI, scripts, browser tooling, and real output to move faster.
+            </p>
+            <p>Keep commercial or internal details out of public repos.</p>
+          </div>
+        </section>
+
+        <section class="contact-panel" aria-labelledby="contact-title">
+          <h2 id="contact-title">Have something repetitive?</h2>
+          <div class="contact-links">
+            <a href="mailto:aldoprianandii@gmail.com"
+              >aldoprianandii@gmail.com</a
+            >
+            <a href="https://www.linkedin.com/in/aldoprianandi">LinkedIn</a>
+            <a href="https://github.com/aldoprianandi">GitHub</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Aldo Prianandi</span>
+        <span>Built as a public surface, not the full archive.</span>
+      </footer>
+    </div>
   </body>
 </html>

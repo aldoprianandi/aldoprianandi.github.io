@@ -5,129 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="About Aldo Prianandi, focused on practical tools, browser automation, internal utilities, and content operations."
+      content="About Aldo Prianandi, focused on practical automation, internal tooling, and content operations."
     />
+    <meta name="theme-color" content="#f4ead8" />
     <title>About | Aldo Prianandi</title>
     <link rel="icon" href="assets/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand-mark" href="index.html" aria-label="Aldo Prianandi home">
-        <img src="assets/logo.png" alt="Aldo Prianandi monogram" />
-      </a>
-
-      <input
-        class="nav-check"
-        type="checkbox"
-        id="nav-check"
-        aria-label="Toggle navigation"
-      />
-      <label class="nav-button" for="nav-check">
-        <span class="nav-button-text">Menu</span>
-        <span class="nav-line" aria-hidden="true"></span>
-        <span class="nav-line" aria-hidden="true"></span>
-      </label>
-
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="index.html"><span>//</span> home <small>01</small></a>
-        <a aria-current="page" href="about.html"
-          ><span>//</span> about <small>02</small></a
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a
+          class="brand-mark"
+          href="index.html"
+          aria-label="Aldo Prianandi home"
         >
-        <a href="projects.html"><span>//</span> work <small>03</small></a>
-        <a href="mailto:aldoprianandii@gmail.com"
-          ><span>//</span> contact <small>04</small></a
-        >
-      </nav>
-    </header>
+          <img
+            src="assets/logo.png"
+            width="474"
+            height="490"
+            alt="Aldo Prianandi monogram"
+            fetchpriority="high"
+          />
+        </a>
 
-    <main>
-      <section class="page-intro" aria-labelledby="about-title">
-        <p class="kicker">About</p>
-        <h1 id="about-title">I build around repetitive work.</h1>
-        <p>
-          My useful work usually starts from a boring problem: too many tabs,
-          too many manual checks, too much repeated content setup, or a process
-          that nobody wants to run by hand every day.
-        </p>
-      </section>
+        <input
+          class="nav-check"
+          type="checkbox"
+          id="nav-check"
+          aria-label="Toggle navigation"
+        />
+        <label class="nav-button" for="nav-check">
+          <span class="nav-button-text">Menu</span>
+          <span class="nav-line" aria-hidden="true"></span>
+          <span class="nav-line" aria-hidden="true"></span>
+        </label>
 
-      <section class="section-block" aria-labelledby="now-title">
-        <div class="section-head">
-          <p class="section-number">01</p>
-          <h2 id="now-title">Now</h2>
-        </div>
-        <div class="text-stack">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a aria-current="page" href="about.html">About</a>
+          <a href="projects.html">Work</a>
+          <a href="mailto:aldoprianandii@gmail.com">Contact</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="page-hero" aria-labelledby="about-title">
+          <p class="eyebrow">About</p>
+          <h1 id="about-title">I notice repeated work and build around it.</h1>
           <p>
-            I work best as a practical builder: mapping a process, finding the
-            repeated parts, and turning them into tools or documented workflows.
+            My strongest work usually starts from something boring: too many
+            tabs, too many manual checks, or a content flow that needs the same
+            setup again and again.
           </p>
-          <p>
-            I use AI heavily as leverage. The important part is still the same:
-            can the result run, be explained, and be trusted enough to use?
-          </p>
-        </div>
-      </section>
+        </section>
 
-      <section class="section-block" aria-labelledby="capability-title">
-        <div class="section-head">
-          <p class="section-number">02</p>
-          <h2 id="capability-title">Capabilities</h2>
-        </div>
-        <div class="row-list">
-          <article>
-            <h3>Workflow mapping</h3>
-            <p>Break loose processes into steps, decisions, and checks.</p>
-          </article>
-          <article>
-            <h3>Automation prototyping</h3>
+        <section class="split-section" aria-labelledby="now-title">
+          <div class="section-label">
+            <span>01</span>
+            <h2 id="now-title">Current shape</h2>
+          </div>
+          <div class="note-stack">
             <p>
-              Use scripts, browser tooling, and AI coding assistants to move
-              fast.
+              I am not trying to look like a generic software engineer
+              portfolio. I am closer to a practical workflow builder.
             </p>
-          </article>
-          <article>
-            <h3>Public cleanup</h3>
-            <p>Turn private experiments into safe repos, docs, and demos.</p>
-          </article>
-          <article>
-            <h3>Content operations</h3>
             <p>
-              Make repeatable systems for posts, carousels, courses, and media.
+              I use AI heavily, but the point is not the prompt. The point is
+              whether the tool runs, saves time, and can be explained.
             </p>
-          </article>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <section class="section-block" aria-labelledby="tools-title">
-        <div class="section-head">
-          <p class="section-number">03</p>
-          <h2 id="tools-title">Tools</h2>
-        </div>
-        <ul class="tag-list" aria-label="Tools">
-          <li>TypeScript</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Remotion</li>
-          <li>Node.js</li>
-          <li>Playwright</li>
-          <li>GitHub Actions</li>
-          <li>Python</li>
-          <li>Git</li>
-        </ul>
-      </section>
-    </main>
+        <section class="split-section" aria-labelledby="capability-title">
+          <div class="section-label">
+            <span>02</span>
+            <h2 id="capability-title">Capabilities</h2>
+          </div>
+          <div class="work-rows">
+            <article>
+              <p class="row-tag">Map</p>
+              <h3>Break loose workflows into repeatable steps.</h3>
+              <p>Find the decisions, checks, and manual handoffs.</p>
+            </article>
+            <article>
+              <p class="row-tag">Build</p>
+              <h3>Prototype tools fast.</h3>
+              <p>
+                Use scripts, browser automation, React, Remotion, and AI agents.
+              </p>
+            </article>
+            <article>
+              <p class="row-tag">Package</p>
+              <h3>Clean private ideas for public viewing.</h3>
+              <p>
+                Docs, demos, repos, and examples without leaking internal
+                context.
+              </p>
+            </article>
+          </div>
+        </section>
 
-    <footer class="site-footer">
-      <a href="mailto:aldoprianandii@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/aldoprianandi">LinkedIn</a>
-      <a href="https://github.com/aldoprianandi">GitHub</a>
-    </footer>
+        <section class="tool-cloud" aria-labelledby="tools-title">
+          <p class="eyebrow">Tools</p>
+          <h2 id="tools-title">Things I reach for</h2>
+          <ul aria-label="Tools">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Remotion</li>
+            <li>Node.js</li>
+            <li>Playwright</li>
+            <li>GitHub Actions</li>
+            <li>Python</li>
+            <li>Browser tooling</li>
+            <li>AI coding agents</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a href="mailto:aldoprianandii@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/aldoprianandi">LinkedIn</a>
+        <a href="https://github.com/aldoprianandi">GitHub</a>
+      </footer>
+    </div>
   </body>
 </html>

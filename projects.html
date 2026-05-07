@@ -5,133 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Selected public work by Aldo Prianandi, led by Cinethetic."
+      content="Selected public work by Aldo Prianandi, including Cinethetic and private workflow categories."
     />
+    <meta name="theme-color" content="#f4ead8" />
     <title>Work | Aldo Prianandi</title>
     <link rel="icon" href="assets/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand-mark" href="index.html" aria-label="Aldo Prianandi home">
-        <img src="assets/logo.png" alt="Aldo Prianandi monogram" />
-      </a>
-
-      <input
-        class="nav-check"
-        type="checkbox"
-        id="nav-check"
-        aria-label="Toggle navigation"
-      />
-      <label class="nav-button" for="nav-check">
-        <span class="nav-button-text">Menu</span>
-        <span class="nav-line" aria-hidden="true"></span>
-        <span class="nav-line" aria-hidden="true"></span>
-      </label>
-
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="index.html"><span>//</span> home <small>01</small></a>
-        <a href="about.html"><span>//</span> about <small>02</small></a>
-        <a aria-current="page" href="projects.html"
-          ><span>//</span> work <small>03</small></a
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a
+          class="brand-mark"
+          href="index.html"
+          aria-label="Aldo Prianandi home"
         >
-        <a href="mailto:aldoprianandii@gmail.com"
-          ><span>//</span> contact <small>04</small></a
-        >
-      </nav>
-    </header>
+          <img
+            src="assets/logo.png"
+            width="474"
+            height="490"
+            alt="Aldo Prianandi monogram"
+            fetchpriority="high"
+          />
+        </a>
 
-    <main>
-      <section class="page-intro" aria-labelledby="work-title">
-        <p class="kicker">Work</p>
-        <h1 id="work-title">Selected public work.</h1>
-        <p>
-          Most of my practical work is private or internal. This page only keeps
-          the public pieces that still fit the direction.
-        </p>
-      </section>
+        <input
+          class="nav-check"
+          type="checkbox"
+          id="nav-check"
+          aria-label="Toggle navigation"
+        />
+        <label class="nav-button" for="nav-check">
+          <span class="nav-button-text">Menu</span>
+          <span class="nav-line" aria-hidden="true"></span>
+          <span class="nav-line" aria-hidden="true"></span>
+        </label>
 
-      <section class="project-detail" aria-labelledby="cinethetic-title">
-        <div class="section-head">
-          <p class="section-number">01</p>
-          <h2 id="cinethetic-title">Cinethetic</h2>
-        </div>
-        <div class="project-body">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a aria-current="page" href="projects.html">Work</a>
+          <a href="mailto:aldoprianandii@gmail.com">Contact</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="page-hero" aria-labelledby="work-title">
+          <p class="eyebrow">Work</p>
+          <h1 id="work-title">Public pieces, private engine.</h1>
           <p>
-            A Remotion carousel renderer for producing structured social content
-            from reusable themes and JSON slide data.
+            Most useful projects are tied to internal workflows. This page keeps
+            the public surface small and honest.
           </p>
-          <dl class="meta-list">
-            <div>
-              <dt>Stack</dt>
-              <dd>TypeScript, React, Remotion</dd>
-            </div>
-            <div>
-              <dt>Status</dt>
-              <dd>Public, documented, CI checked</dd>
-            </div>
-            <div>
-              <dt>Use</dt>
-              <dd>Editorial posts, product explainers, launch notes</dd>
-            </div>
-          </dl>
-          <div class="link-row">
-            <a href="https://github.com/aldoprianandi/cinethetic">GitHub</a>
+        </section>
+
+        <section class="case-study" aria-labelledby="cinethetic-title">
+          <div class="case-title">
+            <p class="eyebrow">Selected public repo</p>
+            <h2 id="cinethetic-title">Cinethetic</h2>
           </div>
-        </div>
-      </section>
+          <div class="case-body">
+            <p>
+              A Remotion carousel renderer for producing structured social
+              content from reusable themes and JSON slide data.
+            </p>
+            <dl class="case-meta">
+              <div>
+                <dt>Stack</dt>
+                <dd>TypeScript, React, Remotion</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Public, documented, CI checked</dd>
+              </div>
+              <div>
+                <dt>Use</dt>
+                <dd>Editorial posts, product explainers, launch notes</dd>
+              </div>
+            </dl>
+            <a
+              class="case-link"
+              href="https://github.com/aldoprianandi/cinethetic"
+              >Open repository</a
+            >
+          </div>
+        </section>
 
-      <section class="section-block" aria-labelledby="private-title">
-        <div class="section-head">
-          <p class="section-number">02</p>
-          <h2 id="private-title">Private Work</h2>
-        </div>
-        <div class="row-list">
-          <article>
-            <h3>Browser tasks</h3>
-            <p>
-              Repeated checking, filtering, form work, and operational browsing.
-            </p>
-          </article>
-          <article>
-            <h3>Internal tools</h3>
-            <p>
-              Small dashboards, scripts, and helpers around existing workflows.
-            </p>
-          </article>
-          <article>
-            <h3>Content pipelines</h3>
-            <p>
-              Systems for reusable creative output, courses, and social assets.
-            </p>
-          </article>
-        </div>
-      </section>
+        <section class="split-section" aria-labelledby="private-title">
+          <div class="section-label">
+            <span>02</span>
+            <h2 id="private-title">Private work types</h2>
+          </div>
+          <div class="work-rows">
+            <article>
+              <p class="row-tag">Browser</p>
+              <h3>Operational browsing tasks.</h3>
+              <p>Repeated checking, filtering, form work, and browser QA.</p>
+            </article>
+            <article>
+              <p class="row-tag">Internal</p>
+              <h3>Tools around existing workflows.</h3>
+              <p>
+                Scripts, small dashboards, and helpers built for actual use.
+              </p>
+            </article>
+            <article>
+              <p class="row-tag">Media</p>
+              <h3>Repeatable content production.</h3>
+              <p>
+                Systems for carousels, courses, creative assets, and publishing.
+              </p>
+            </article>
+          </div>
+        </section>
 
-      <section class="section-block" aria-labelledby="archive-title">
-        <div class="section-head">
-          <p class="section-number">03</p>
-          <h2 id="archive-title">Archive</h2>
-        </div>
-        <div class="text-stack">
+        <section class="archive-note" aria-labelledby="archive-title">
+          <p class="eyebrow">Archive</p>
+          <h2 id="archive-title">Old static projects stay in the past.</h2>
           <p>
-            The older university-era static sites were useful practice, but they
-            are not the main proof for this version of the site.
+            They were useful practice from university, but not the main proof
+            for the work I want this site to represent now.
           </p>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-    <footer class="site-footer">
-      <a href="mailto:aldoprianandii@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/aldoprianandi">LinkedIn</a>
-      <a href="https://github.com/aldoprianandi">GitHub</a>
-    </footer>
+      <footer class="site-footer">
+        <a href="mailto:aldoprianandii@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/aldoprianandi">LinkedIn</a>
+        <a href="https://github.com/aldoprianandi">GitHub</a>
+      </footer>
+    </div>
   </body>
 </html>
