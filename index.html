@@ -1,579 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Aldo Prianandi - Front-end Web Developer</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="description"
+      content="Aldo Prianandi builds practical tools for internal workflows, browser automation, content operations, and AI-assisted systems."
     />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="shortcut icon"
-      href="
-    assets/logo.png"
-      type="image/x-icon"
-    />
-
-    <!-- Styling -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/all.css" />
-
-    <!-- Google Fonts -->
-
+    <title>Aldo Prianandi | AI-Assisted Workflow Builder</title>
+    <link rel="icon" href="assets/logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Akhir AOS -->
-
-    <!--  -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
-    <header>
-      <!-- Navbar -->
+    <header class="site-header">
+      <a class="brand-mark" href="index.html" aria-label="Aldo Prianandi home">
+        <img src="assets/logo.png" alt="Aldo Prianandi monogram" />
+      </a>
 
-      <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary my-3">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="assets/logo.png"
-                alt=""
-                style="width: 64px; height: 64px"
-              />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="navbarNavAltMarkup"
-            >
-              <div class="navbar-nav text-right">
-                <a
-                  class="nav-link active ms-5"
-                  aria-current="page"
-                  href="/index.html"
-                  >// home<span class="number align-text-top ms-1">01</span></a
-                >
+      <input
+        class="nav-check"
+        type="checkbox"
+        id="nav-check"
+        aria-label="Toggle navigation"
+      />
+      <label class="nav-button" for="nav-check">
+        <span class="nav-button-text">Menu</span>
+        <span class="nav-line" aria-hidden="true"></span>
+        <span class="nav-line" aria-hidden="true"></span>
+      </label>
 
-                <a class="nav-link ms-5" href="/about.html"
-                  >// about<span class="number align-text-top ms-1">02</span></a
-                >
-                <a class="nav-link ms-5" href="/projects.html"
-                  >// projects<span class="number align-text-top ms-1"
-                    >03</span
-                  ></a
-                >
-                <a class="nav-link ms-5" href="mailto:aldoprianandii@gmail.com"
-                  >// contact<span class="number align-text-top ms-1"
-                    >04</span
-                  ></a
-                >
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <!-- Akhir Navbar -->
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a aria-current="page" href="index.html"
+          ><span>//</span> home <small>01</small></a
+        >
+        <a href="about.html"><span>//</span> about <small>02</small></a>
+        <a href="projects.html"><span>//</span> work <small>03</small></a>
+        <a href="mailto:aldoprianandii@gmail.com"
+          ><span>//</span> contact <small>04</small></a
+        >
+      </nav>
     </header>
+
     <main>
-      <section class="jumbotron" id="home">
-        <div class="container">
-          <div class="row" data-aos="fade-right">
-            <div class="col">
-              <h6 class="bg-code my-5">
-                &lt;p&gt; <br />
-                &nbsp; &nbsp; Hello World! <br />&nbsp; &nbsp; Do i need to
-                create more hello world?<br />&lt;/p&gt;
-              </h6>
-            </div>
-          </div>
+      <section class="hero section-grid" aria-labelledby="hero-title">
+        <p class="code-note code-note-a" aria-hidden="true">
+          &lt;loop&gt;<br />
+          &nbsp;&nbsp;find repeated work<br />
+          &nbsp;&nbsp;turn it into a tool<br />
+          &lt;/loop&gt;
+        </p>
 
-          <div class="row" data-aos="fade-up">
-            <div class="col text-center my-5">
-              <h1 class="mb-3">
-                <span class="text-secondary">Hi.</span> I'm Aldo.<br />
-                <span class="text-secondary">I'm a Web Developer.</span>
-              </h1>
-
-              <p class="text-secondary">
-                I also create beautiful and intuitive UI/UX design
-                <br />through clean and modern design.
-              </p>
-
-              <a href="projects.html" class="work-link text-dark link-secondary"
-                ><h6>see my work &rarr;</h6>
-              </a>
-
-              <div class="row mt-3">
-                <div class="col">
-                  <a href="https://github.com/aldoprianandi" class="mx-1"
-                    ><img
-                      src="assets/github-icon.png"
-                      alt="GitHub"
-                      width="24"
-                      height="24"
-                  /></a>
-                  <a
-                    href="https://www.linkedin.com/in/aldoprianandi"
-                    class="mx-1"
-                    ><img
-                      src="assets/linkedin-icon.png"
-                      alt="LinkedIn"
-                      width="24"
-                      height="24"
-                  /></a>
-                  <a href="https://dribbble.com/aldopria" class="mx-1"
-                    ><img
-                      src="assets/dribbble-icon.png"
-                      alt="Dribbble"
-                      width="24"
-                      height="24"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row" data-aos="fade-left">
-            <div class="col">
-              <h6 class="bg-code my-5 d-flex justify-content-end text-start">
-                &lt;p&gt; <br />
-                &nbsp; &nbsp; Nah <br />&nbsp; &nbsp; We use lorem ipsum not
-                hello world<br />&lt;/p&gt;
-              </h6>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About -->
-
-      <section class="about d-flex align-items-center" id="about">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md-6 about-text" data-aos="fade-right">
-              <div class="row">
-                <h2>
-                  <span class="section-number me-2 align-text-top">02.</span
-                  >About
-                </h2>
-              </div>
-              <p class="mt-2">
-                Hello! I'm a Junior Front-End Developer with expertise in HTML,
-                CSS, JavaScript, Bootstrap, and Laravel. I'm passionate about
-                creating visually appealing, user-friendly digital experiences.
-                My skill set includes designing and maintaining responsive
-                websites for a smooth user experience, and I'm known for
-                crafting dynamic, engaging interfaces with clean and optimized
-                code. I thrive in collaborative environments, working with
-                cross-functional teams to produce outstanding web applications.
-              </p>
-              <a
-                class="btn btn-dark rounded-0 mt-2"
-                href="about.html"
-                role="button"
-                >More About Me</a
-              >
-            </div>
-
-            <div
-              class="col-md-5 d-none d-md-flex about-img text-end"
-              data-aos="fade-left"
+        <div class="hero-copy">
+          <p class="eyebrow">Public portfolio, private workflow builder</p>
+          <h1 id="hero-title">Aldo Prianandi</h1>
+          <p class="hero-line">
+            I build practical tools around messy workflows: browser automation,
+            internal utilities, content operations, and AI-assisted systems.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button button-dark" href="projects.html">View work</a>
+            <a
+              class="button button-light"
+              href="mailto:aldoprianandii@gmail.com"
+              >Email me</a
             >
-              <img
-                src="assets/about.png"
-                alt="About"
-                class="img-fluid bg-secondary rounded-3"
-              />
-            </div>
           </div>
         </div>
+
+        <aside class="hero-panel" aria-label="Current positioning">
+          <dl>
+            <div>
+              <dt>Current focus</dt>
+              <dd>Internal tools and automation</dd>
+            </div>
+            <div>
+              <dt>Public proof</dt>
+              <dd>Cinethetic, a Remotion carousel renderer</dd>
+            </div>
+            <div>
+              <dt>Operating style</dt>
+              <dd>AI-assisted build, then verify with real output</dd>
+            </div>
+          </dl>
+        </aside>
+
+        <p class="code-note code-note-b" aria-hidden="true">
+          &lt;note&gt;<br />
+          &nbsp;&nbsp;not everything public<br />
+          &nbsp;&nbsp;most useful tools stay internal<br />
+          &lt;/note&gt;
+        </p>
       </section>
 
-      <!-- Akhir About -->
-
-      <!-- Projects -->
-      <section class="projects d-flex align-items-center" id="projects">
-        <div class="container">
-          <div class="row" data-aos="fade-up">
-            <div class="col" style="margin-top: 135px">
-              <h2>
-                <span class="section-number me-2 align-text-top">03.</span
-                >Created with love. \\
-              </h2>
-              <p class="mt-3">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; These are a selection of my
-                projects.
-              </p>
-            </div>
+      <section class="section-block" aria-labelledby="focus-title">
+        <div class="section-kicker">01.</div>
+        <div class="section-two-col">
+          <div>
+            <h2 id="focus-title">Built for practical leverage.</h2>
           </div>
-
-          <div
-            class="row projects-item align-items-center justify-content-between"
-          >
-            <div class="col-md-6" data-aos="fade-right">
-              <img src="assets/sunbic.png" alt="" class="img-fluid" />
-            </div>
-
-            <div class="col-md-5 text-center text-md-end" data-aos="fade-left">
-              <h3>sunbic university</h3>
-              <p class="mt-4">
-                <b>Sunbic University</b> is a university website that supports
-                online learning during the COVID-19 pandemic, thereby reducing
-                the need for in-person contact in the learning process.
-              </p>
-              <a
-                class="btn btn-dark rounded-0 mt-2 justify-content-end"
-                href="https://sunbic.vercel.app/"
-                role="button"
-                >Visit Website</a
-              >
-            </div>
-          </div>
-
-          <hr />
-
-          <div
-            class="row projects-item align-items-center justify-content-between"
-          >
-            <div
-              class="col-md-5 order-md-1 order-2 text-center text-md-start"
-              data-aos="fade-right"
-            >
-              <h3>vorgreens</h3>
-              <p class="mt-4">
-                <b>VOrgreens</b> is a restaurant website that offers healthy
-                food options for its customers. Here, you can find the menu,
-                location, and contact information for the restaurant.
-              </p>
-              <a
-                class="btn btn-dark rounded-0 mt-2 justify-content-end"
-                href="https://vorgreens.vercel.app/"
-                role="button"
-                >Visit Website</a
-              >
-            </div>
-            <div class="col-md-6 order-md-2 order-1" data-aos="fade-left">
-              <img src="assets/vorgreens.png" alt="" class="img-fluid" />
-            </div>
-          </div>
-
-          <hr />
-
-          <div
-            class="row projects-item align-items-center justify-content-between"
-          >
-            <div class="col-md-6" data-aos="fade-right">
-              <img src="assets/sadardiri.png" alt="" class="img-fluid" />
-            </div>
-
-            <div class="col-md-5 text-center text-md-end" data-aos="fade-left">
-              <h3>sadardiri.</h3>
-              <p class="mt-4">
-                <b>SadarDiri.</b> is a mental health service website aimed at
-                improving mental health awareness in Indonesia. The website
-                features a user-friendly and soothing design to ensure that
-                users feel comfortable and at ease while accessing it. It also
-                offers various features, including personality tests and
-                consultations.
-              </p>
-              <a
-                class="btn btn-dark rounded-0 mt-2 justify-content-end"
-                href="https://sadardiri.vercel.app/"
-                role="button"
-                >Visit Website</a
-              >
-            </div>
-          </div>
-
-          <div class="row text-center projects-item" data-aos="fade-up">
-            <div class="col">
-              <a
-                class="btn btn-dark btn-lg rounded-0 mt-2 justify-content-end"
-                href="/projects.html"
-                role="button"
-                >view all projects</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Akhir Projects -->
-
-      <!-- Skill Tool -->
-      <section class="skill">
-        <div class="container">
-          <div
-            class="row text-center justify-content-center align-content-center"
-          >
-            <div class="col">
-              <div class="row" data-aos="fade-up">
-                <div class="col">
-                  <h2>tools & skills.</h2>
-                </div>
-              </div>
-
-              <div class="row mb-5 justify-content-center">
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/html-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/css-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/js-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/bs-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/fg-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/git-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/gh-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="col-md-2 col-3 mt-5 ms-4"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="800"
-                >
-                  <div class="card rounded-5 border-0 shadow">
-                    <img
-                      src="assets/skill/laravel-skill.png"
-                      alt=""
-                      class="img-fluid rounded-5"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Akhir Skill Tool -->
-
-      <!-- Contact -->
-
-      <section class="contact d-flex align-items-center" id="contact">
-        <div class="container">
-          <div class="row" data-aos="fade-left">
-            <div class="col">
-              <h6
-                class="bg-code d-flex justify-content-end text-start"
-                style="margin-bottom: 200px"
-              >
-                &lt;p&gt; <br />
-                &nbsp; &nbsp; Thank you for visiting my personal portfolio.
-                <br />&nbsp; &nbsp; Feel free to send me as message by clicking
-                the button.<br />&lt;/p&gt;
-              </h6>
-            </div>
-          </div>
-
-          <div
-            class="row text-center justify-content-center align-content-center"
-            data-aos="fade-up"
-          >
-            <div class="col-6">
-              <span class="section-number">04.</span>
-              <h2>get in touch.</h2>
+          <div class="lined-list">
+            <article>
+              <h3>Browser-driven operations</h3>
               <p>
-                Thank you for visiting my personal portfolio. If you would like
-                to get in touch with me, please feel free to send me a message
-                by clicking the button below. I will do my best to respond to
-                you as soon as possible. I look forward to connecting with you!
+                Automating repeated web tasks, account workflows,
+                scraping-adjacent checks, and QA loops.
               </p>
-
-              <a
-                class="btn btn-dark btn-lg rounded-0 mt-5 justify-content-end"
-                href="mailto:aldoprianandii@gmail.com"
-                role="button"
-                >Say Hello!</a
-              >
-            </div>
+            </article>
+            <article>
+              <h3>Internal utilities</h3>
+              <p>
+                Small tools, dashboards, scripts, and workflow helpers that
+                reduce manual friction.
+              </p>
+            </article>
+            <article>
+              <h3>Content systems</h3>
+              <p>
+                Reusable pipelines for social posts, course assets, creative
+                output, and media operations.
+              </p>
+            </article>
+            <article>
+              <h3>Public-safe packaging</h3>
+              <p>
+                Turning private workflow ideas into clean repos without leaking
+                internal logic or client context.
+              </p>
+            </article>
           </div>
-          <div class="row" data-aos="fade-right">
-            <div class="col">
-              <h6 class="bg-code" style="margin-top: 200px">
-                &lt;section class="contact"&gt; <br />
-                &nbsp; &nbsp;&lt;h1&gt; get in touch.&lt;/h1&gt<br />&lt;/section&gt;
-              </h6>
+        </div>
+      </section>
+
+      <section class="feature-section" aria-labelledby="cinethetic-title">
+        <div class="section-kicker">02.</div>
+        <div class="feature-layout">
+          <div class="feature-copy">
+            <p class="eyebrow">Featured public work</p>
+            <h2 id="cinethetic-title">Cinethetic</h2>
+            <p>
+              Programmable social carousel renderer built with Remotion, React,
+              and TypeScript. It turns structured JSON content into reusable
+              themed slides.
+            </p>
+          </div>
+          <div class="feature-spec">
+            <ul>
+              <li>
+                <span>Use case</span
+                ><strong>Editorial and product carousels</strong>
+              </li>
+              <li>
+                <span>Stack</span><strong>TypeScript, React, Remotion</strong>
+              </li>
+              <li>
+                <span>Status</span
+                ><strong>Public, documented, CI checked</strong>
+              </li>
+            </ul>
+            <div class="feature-links">
+              <a href="https://github.com/aldoprianandi/cinethetic"
+                >GitHub repo</a
+              >
+              <a href="projects.html">Project notes</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Akhir Contact -->
-    </main>
-    <footer class="">
-      <div class="container">
-        <div class="row py-3">
-          <div class="col text-start align-self-center">
-            <h6 class="text-dark m-0">
-              Copyright &copy; 2023. All rights reserved.
-            </h6>
-          </div>
-          <div class="col text-end">
-            <a href="https://github.com/aldoprianandi" class="mx-1"
-              ><img
-                src="assets/github-icon.png"
-                alt="GitHub"
-                width="24"
-                height="24"
-            /></a>
-            <a href="https://www.linkedin.com/in/aldoprianandi" class="mx-1"
-              ><img
-                src="assets/linkedin-icon.png"
-                alt="LinkedIn"
-                width="24"
-                height="24"
-            /></a>
-            <a href="https://dribbble.com/aldopria" class="mx-1"
-              ><img
-                src="assets/dribbble-icon.png"
-                alt="Dribbble"
-                width="24"
-                height="24"
-            /></a>
+      <section class="section-block" aria-labelledby="style-title">
+        <div class="section-kicker">03.</div>
+        <div class="section-two-col">
+          <h2 id="style-title">How I work.</h2>
+          <div class="statement-stack">
+            <p>Start from the real task, not the imagined architecture.</p>
+            <p>
+              Use AI heavily, then verify behavior with checks, docs,
+              screenshots, and actual output.
+            </p>
+            <p>
+              Prefer small tools people actually use over large systems nobody
+              wants to maintain.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Copyright -->
+      <section class="contact-band" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Open to practical work</p>
+          <h2 id="contact-title">Have a messy workflow worth cleaning up?</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:aldoprianandii@gmail.com">aldoprianandii@gmail.com</a>
+          <a href="https://www.linkedin.com/in/aldoprianandi">LinkedIn</a>
+          <a href="https://github.com/aldoprianandi">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Aldo Prianandi</span>
+      <span>Indonesia</span>
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/all.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
