@@ -16,7 +16,7 @@ There is no build step. GitHub Pages serves the files directly from the reposito
 
 - `index.html`: home and current positioning
 - `about.html`: capabilities, tools, and background
-- `projects.html`: selected public work, led by the Cinethetic v0.1.0 release
+- `projects.html`: selected work, Cinethetic, Bolakokgitu, and operational case studies
 - `css/workbench-layout-20260507.css`: visual system and responsive layout
 - `assets/logo.png`: site mark
 - `assets/cinethetic/`: compressed public demo previews from Cinethetic
