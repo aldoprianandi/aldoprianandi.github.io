@@ -16,7 +16,15 @@ There is no build step. GitHub Pages serves the files directly from the reposito
 
 - `index.html`: home and current positioning
 - `about.html`: capabilities, tools, and public/private boundary
-- `projects.html`: selected public work, led by Cinethetic
+- `projects.html`: selected public work, led by the Cinethetic v0.1.0 release
 - `css/workbench-layout-20260507.css`: visual system and responsive layout
 - `assets/logo.png`: site mark
 - `assets/cinethetic/`: compressed public demo previews from Cinethetic
+
+## Public Surface
+
+The current public GitHub surface is intentionally curated:
+
+- current work: Cinethetic, profile README, and this website
+- public archive: selected student/practice projects with archive labels
+- private archive: noisy early clones or outdated practice repos
