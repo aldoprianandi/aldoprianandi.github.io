@@ -642,10 +642,13 @@ figcaption {
 }
 
 .case-hero-image {
+  width: 100%;
+  max-width: 100%;
   margin-top: 34px;
   border: 2px solid var(--ink);
   background: var(--cream);
   box-shadow: 8px 8px 0 var(--green);
+  overflow: hidden;
 }
 
 .case-hero-image figcaption {
@@ -653,7 +656,16 @@ figcaption {
   border-top: 1px solid var(--line);
 }
 
+.case-showcase-image {
+  box-shadow: 9px 9px 0 var(--red);
+}
+
+.case-showcase-image img {
+  object-fit: contain;
+}
+
 .case-meta {
+  max-width: 100%;
   margin: 34px 0;
   border-top: 2px solid var(--ink);
 }
@@ -674,6 +686,7 @@ figcaption {
 .case-meta dd {
   margin: 0;
   color: var(--ink);
+  overflow-wrap: anywhere;
 }
 
 .demo-board {
@@ -868,7 +881,16 @@ pre code {
 
 @media (max-width: 760px) {
   :root {
-    --page: min(100vw - 28px, 620px);
+    --page: calc(100vw - 28px);
+  }
+
+  .site-shell {
+    width: calc(100vw - 28px);
+    max-width: calc(100vw - 28px);
+  }
+
+  .site-shell * {
+    min-width: 0;
   }
 
   body {
@@ -950,7 +972,7 @@ pre code {
 
   h1 {
     max-width: 9ch;
-    font-size: clamp(3.4rem, 17vw, 5.7rem);
+    font-size: clamp(3.2rem, 15vw, 5rem);
   }
 
   h2 {
@@ -960,8 +982,36 @@ pre code {
   .hero-lede,
   .page-hero p,
   .project-copy p,
+  .case-body > p,
+  .demo-intro,
+  p {
+    max-width: 100%;
+  }
+
+  .hero-lede,
+  .page-hero p,
+  .project-copy p,
   .case-body > p {
     font-size: 1.16rem;
+  }
+
+  .case-body {
+    justify-self: stretch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .case-meta dd,
+  figcaption,
+  pre,
+  code {
+    overflow-wrap: anywhere;
+  }
+
+  .case-hero-image,
+  .project-preview,
+  .theme-grid figure {
+    overflow: hidden;
   }
 
   .identity-plate {
@@ -1046,11 +1096,16 @@ pre code {
     --page: calc(100vw - 24px);
   }
 
+  .site-shell {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+  }
+
   .brand-mark {
     width: 58px;
   }
 
   h1 {
-    font-size: clamp(3.05rem, 16vw, 4.4rem);
+    font-size: clamp(2.9rem, 14vw, 4rem);
   }
 }
