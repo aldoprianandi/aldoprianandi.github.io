@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aldoprianandi.github.io/sitemap.xml
