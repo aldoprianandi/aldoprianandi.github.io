@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">BKG Production Flow showcase</title>
+  <desc id="desc">A portfolio visual showing a football content production workflow from topic intake to AI media generation, review, AutoEdit handoff, and publishing status.</desc>
+  <defs>
+    <filter id="hard-shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#2f6d51" flood-opacity="1"/>
+    </filter>
+    <style>
+      .paper{fill:#f7efd9}
+      .ink{fill:#171a1f}
+      .cream{fill:#fff8e8}
+      .tan{fill:#eadcbc}
+      .green{fill:#2f6d51}
+      .blue{fill:#3c67a4}
+      .red{fill:#9b3328}
+      .muted{fill:#68707a}
+      .line{stroke:#171a1f;stroke-width:3}
+      .thin{stroke:#171a1f;stroke-width:2}
+      .mono{font-family:"JetBrains Mono", "SFMono-Regular", Consolas, monospace;font-weight:700}
+      .display{font-family:"Bricolage Grotesque", Inter, system-ui, sans-serif;font-weight:800}
+      .body{font-family:Inter, system-ui, sans-serif;font-weight:700}
+      .tiny{font-size:15px}
+      .small{font-size:19px}
+      .body-size{font-size:24px}
+      .h{font-size:56px}
+    </style>
+  </defs>
+
+  <rect class="paper" width="1200" height="675"/>
+  <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200M0 630h1200M100 0v675M200 0v675M300 0v675M400 0v675M500 0v675M600 0v675M700 0v675M800 0v675M900 0v675M1000 0v675M1100 0v675" stroke="#171a1f" stroke-opacity=".08"/>
+
+  <rect x="46" y="44" width="1108" height="584" class="cream line" filter="url(#hard-shadow)"/>
+  <rect x="46" y="44" width="1108" height="84" class="ink"/>
+  <circle cx="84" cy="86" r="10" class="red"/>
+  <circle cx="116" cy="86" r="10" fill="#d7a64a"/>
+  <circle cx="148" cy="86" r="10" class="green"/>
+  <text x="184" y="92" class="mono small cream">Content production system</text>
+  <text x="790" y="92" class="mono tiny" fill="#c9d3df">story / AI media / review / AutoEdit</text>
+
+  <text x="72" y="191" class="display h ink">BKG Production Flow</text>
+  <text x="72" y="229" class="body small muted">Story planning, AI media assets, review, and AutoEdit handoff for short-form football content.</text>
+
+  <g transform="translate(78 286)">
+    <rect x="0" y="0" width="228" height="238" class="tan line"/>
+    <text x="24" y="44" class="mono tiny blue">INTAKE</text>
+    <text x="24" y="88" class="display body-size ink">Idea desk</text>
+    <path d="M26 121h150M26 154h176M26 187h118" stroke="#171a1f" stroke-width="8" stroke-linecap="round"/>
+    <rect x="136" y="28" width="64" height="64" class="red"/>
+    <text x="154" y="67" class="mono small cream">01</text>
+  </g>
+
+  <g transform="translate(354 286)">
+    <rect x="0" y="0" width="228" height="238" class="cream line"/>
+    <text x="24" y="44" class="mono tiny blue">GENERATE</text>
+    <text x="24" y="88" class="display body-size ink">Asset kit</text>
+    <g transform="translate(24 112)">
+      <rect width="136" height="30" class="green"/>
+      <text x="14" y="21" class="mono tiny cream">image set</text>
+    </g>
+    <g transform="translate(24 154)">
+      <rect width="138" height="30" class="blue"/>
+      <text x="14" y="21" class="mono tiny cream">video pass</text>
+    </g>
+    <g transform="translate(24 196)">
+      <rect width="128" height="30" class="red"/>
+      <text x="14" y="21" class="mono tiny cream">voiceover</text>
+    </g>
+    <rect x="136" y="28" width="64" height="64" class="ink"/>
+    <text x="154" y="67" class="mono small cream">02</text>
+  </g>
+
+  <g transform="translate(630 286)">
+    <rect x="0" y="0" width="228" height="238" class="tan line"/>
+    <text x="24" y="44" class="mono tiny blue">REVIEW</text>
+    <text x="24" y="88" class="display body-size ink">QC lane</text>
+    <circle cx="43" cy="135" r="16" class="green"/>
+    <text x="76" y="143" class="body small ink">facts</text>
+    <circle cx="43" cy="181" r="16" class="blue"/>
+    <text x="76" y="189" class="body small ink">media</text>
+    <rect x="136" y="28" width="64" height="64" class="red"/>
+    <text x="154" y="67" class="mono small cream">03</text>
+  </g>
+
+  <g transform="translate(906 286)">
+    <rect x="0" y="0" width="210" height="238" class="ink"/>
+    <text x="24" y="44" class="mono tiny" fill="#8fcca8">HANDOFF</text>
+    <text x="24" y="84" class="display body-size cream">AutoEdit</text>
+    <text x="24" y="114" class="display body-size cream">handoff</text>
+    <rect x="24" y="138" width="160" height="36" class="cream"/>
+    <text x="38" y="162" class="mono tiny blue">project folder</text>
+    <rect x="24" y="190" width="132" height="36" class="green"/>
+    <text x="38" y="214" class="mono tiny cream">publish</text>
+  </g>
+
+  <path d="M316 405h28" class="line" fill="none"/>
+  <path d="M336 392l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M592 405h28" class="line" fill="none"/>
+  <path d="M612 392l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M868 405h28" class="line" fill="none"/>
+  <path d="M888 392l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="72" y="596" width="454" height="32" class="green"/>
+  <text x="88" y="618" class="mono tiny cream">Topic -> AI assets -> AutoEdit handoff.</text>
+</svg>

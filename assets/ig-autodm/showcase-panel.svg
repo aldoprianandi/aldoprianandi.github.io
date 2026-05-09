@@ -39,7 +39,7 @@
   <text x="875" y="92" class="mono tiny" fill="#c9d3df">official API / self-hosted</text>
 
   <text x="72" y="191" class="display h ink">IG comment-to-DM backend</text>
-  <text x="72" y="228" class="body small muted">Owned campaigns. Official API. Operator controls. No public source.</text>
+  <text x="72" y="228" class="body small muted">Owned campaigns. Official API. Queue-backed delivery. Operator controls.</text>
 
   <g transform="translate(80 275)">
     <rect x="0" y="0" width="225" height="300" rx="34" class="ink"/>
@@ -102,6 +102,6 @@
   <path d="M614 425h30" class="line" fill="none"/>
   <path d="M636 412l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <rect x="72" y="596" width="456" height="32" class="red"/>
-  <text x="88" y="618" class="mono tiny cream">Comment trigger -> queue -> admin controls -> DM handoff.</text>
+  <rect x="72" y="596" width="312" height="32" class="red"/>
+  <text x="88" y="618" class="mono tiny cream">Comment -> queue -> DM handoff.</text>
 </svg>

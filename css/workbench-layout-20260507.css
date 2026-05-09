@@ -1014,6 +1014,16 @@ pre code {
     overflow: hidden;
   }
 
+  .case-hero-image {
+    width: calc(100% - 8px);
+    max-width: calc(100% - 8px);
+    box-shadow: 7px 7px 0 var(--green);
+  }
+
+  .case-showcase-image {
+    box-shadow: 7px 7px 0 var(--red);
+  }
+
   .identity-plate {
     min-height: 360px;
     padding: 24px;

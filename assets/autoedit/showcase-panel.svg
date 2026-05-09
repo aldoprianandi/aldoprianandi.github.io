@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AutoEdit showcase</title>
+  <desc id="desc">A portfolio visual showing a video editing automation pipeline for BKG project folders, with validation, voiceover alignment, scene assembly, subtitle generation, BGM mix, and export review.</desc>
+  <defs>
+    <filter id="hard-shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#9b3328" flood-opacity="1"/>
+    </filter>
+    <style>
+      .paper{fill:#f7efd9}
+      .ink{fill:#171a1f}
+      .cream{fill:#fff8e8}
+      .tan{fill:#eadcbc}
+      .green{fill:#2f6d51}
+      .blue{fill:#3c67a4}
+      .red{fill:#9b3328}
+      .muted{fill:#68707a}
+      .line{stroke:#171a1f;stroke-width:3}
+      .thin{stroke:#171a1f;stroke-width:2}
+      .mono{font-family:"JetBrains Mono", "SFMono-Regular", Consolas, monospace;font-weight:700}
+      .display{font-family:"Bricolage Grotesque", Inter, system-ui, sans-serif;font-weight:800}
+      .body{font-family:Inter, system-ui, sans-serif;font-weight:700}
+      .tiny{font-size:15px}
+      .small{font-size:19px}
+      .body-size{font-size:24px}
+      .h{font-size:58px}
+    </style>
+  </defs>
+
+  <rect class="paper" width="1200" height="675"/>
+  <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200M0 630h1200M100 0v675M200 0v675M300 0v675M400 0v675M500 0v675M600 0v675M700 0v675M800 0v675M900 0v675M1000 0v675M1100 0v675" stroke="#171a1f" stroke-opacity=".08"/>
+
+  <rect x="46" y="44" width="1108" height="584" class="cream line" filter="url(#hard-shadow)"/>
+  <rect x="46" y="44" width="1108" height="84" class="ink"/>
+  <circle cx="84" cy="86" r="10" class="red"/>
+  <circle cx="116" cy="86" r="10" fill="#d7a64a"/>
+  <circle cx="148" cy="86" r="10" class="green"/>
+  <text x="184" y="92" class="mono small cream">Editing automation pipeline</text>
+  <text x="806" y="92" class="mono tiny" fill="#c9d3df">validate / align / render / export</text>
+
+  <text x="72" y="191" class="display h ink">AutoEdit</text>
+  <text x="72" y="229" class="body small muted">Turns BKG project folders into vertical edits with timing, subtitles, BGM, and export variants.</text>
+
+  <g transform="translate(80 286)">
+    <rect x="0" y="0" width="240" height="260" class="tan line"/>
+    <text x="24" y="44" class="mono tiny blue">FOLDER INPUT</text>
+    <rect x="24" y="70" width="72" height="96" class="red"/>
+    <rect x="112" y="70" width="72" height="96" class="blue"/>
+    <rect x="24" y="188" width="196" height="34" class="cream thin"/>
+    <text x="38" y="211" class="mono tiny ink">script + VO + media</text>
+  </g>
+
+  <g transform="translate(370 286)">
+    <rect x="0" y="0" width="230" height="260" class="cream line"/>
+    <text x="24" y="44" class="mono tiny blue">VOICE ALIGN</text>
+    <path d="M32 96h152M32 140h120M32 184h166" stroke="#171a1f" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="64" cy="96" r="14" class="green"/>
+    <circle cx="126" cy="140" r="14" class="blue"/>
+    <circle cx="184" cy="184" r="14" class="red"/>
+    <text x="24" y="232" class="body small muted">timing map</text>
+  </g>
+
+  <g transform="translate(650 286)">
+    <rect x="0" y="0" width="222" height="260" class="tan line"/>
+    <text x="24" y="44" class="mono tiny blue">RENDER QUEUE</text>
+    <g transform="translate(24 78)">
+      <rect width="174" height="42" class="ink"/>
+      <text x="16" y="27" class="mono tiny cream">scene assembly</text>
+    </g>
+    <g transform="translate(24 138)">
+      <rect width="146" height="42" class="green"/>
+      <text x="16" y="27" class="mono tiny cream">subtitles</text>
+    </g>
+    <g transform="translate(24 198)">
+      <rect width="120" height="42" class="blue"/>
+      <text x="16" y="27" class="mono tiny cream">BGM mix</text>
+    </g>
+  </g>
+
+  <g transform="translate(922 286)">
+    <rect x="0" y="0" width="198" height="260" class="ink"/>
+    <text x="22" y="44" class="mono tiny" fill="#8fcca8">EXPORT</text>
+    <rect x="22" y="72" width="154" height="86" class="cream"/>
+    <text x="38" y="104" class="display body-size ink">9:16</text>
+    <text x="38" y="135" class="mono tiny blue">final.mp4</text>
+    <rect x="22" y="184" width="154" height="42" class="red"/>
+    <text x="38" y="211" class="mono tiny cream">review pass</text>
+  </g>
+
+  <path d="M330 416h30" class="line" fill="none"/>
+  <path d="M352 403l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M610 416h30" class="line" fill="none"/>
+  <path d="M632 403l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M882 416h30" class="line" fill="none"/>
+  <path d="M904 403l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="72" y="596" width="408" height="32" class="red"/>
+  <text x="88" y="618" class="mono tiny cream">Validate -> align -> assemble -> export.</text>
+</svg>
