@@ -279,8 +279,7 @@ p {
 .hero-lede,
 .page-hero p,
 .project-copy p,
-.case-body > p,
-.demo-intro {
+.case-body > p {
   max-width: 54ch;
   color: var(--ink);
   font-size: clamp(1.2rem, 2.1vw, 1.72rem);
@@ -444,7 +443,6 @@ p {
 .project-callout,
 .case-study,
 .tool-cloud,
-.demo-section,
 .contact-panel {
   padding: clamp(68px, 10vw, 140px) 0;
   border-bottom: 1px solid var(--line);
@@ -728,13 +726,24 @@ figcaption {
   overflow-wrap: anywhere;
 }
 
-.demo-board {
+.case-proof-block {
   display: grid;
   gap: clamp(24px, 4vw, 44px);
 }
 
-.demo-intro {
-  margin-bottom: 0;
+.case-proof-copy {
+  display: grid;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 2px solid var(--ink);
+}
+
+.case-proof-copy p {
+  margin: 0;
+}
+
+.case-proof-copy p:not(.row-tag) {
+  max-width: 58ch;
 }
 
 .theme-grid {
@@ -1022,7 +1031,6 @@ pre code {
   .page-hero p,
   .project-copy p,
   .case-body > p,
-  .demo-intro,
   p {
     max-width: 100%;
   }
@@ -1117,7 +1125,6 @@ pre code {
   .project-callout,
   .case-study,
   .tool-cloud,
-  .demo-section,
   .contact-panel {
     padding: 58px 0;
   }
@@ -1160,6 +1167,14 @@ pre code {
   .theme-grid,
   .code-ledger {
     grid-template-columns: 1fr;
+  }
+
+  .case-proof-block .theme-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-proof-block .theme-grid figcaption {
+    padding: 7px 8px 9px;
   }
 
   .case-meta div {
