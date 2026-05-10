@@ -664,6 +664,45 @@ figcaption {
   object-fit: contain;
 }
 
+.case-visual-stack {
+  display: grid;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+.case-visual-stack .case-hero-image {
+  margin-top: 0;
+}
+
+.case-ui-preview {
+  box-shadow: 9px 9px 0 var(--red);
+}
+
+.case-ui-preview img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.case-console-preview {
+  box-shadow: 9px 9px 0 var(--red);
+}
+
+.case-console-preview img {
+  aspect-ratio: 1400 / 665;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.case-workflow-preview {
+  box-shadow: 9px 9px 0 var(--green);
+}
+
+.case-workflow-preview img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
 .case-meta {
   max-width: 100%;
   margin: 34px 0;
@@ -1022,6 +1061,40 @@ pre code {
 
   .case-showcase-image {
     box-shadow: 7px 7px 0 var(--red);
+  }
+
+  .case-visual-stack {
+    gap: 22px;
+    width: calc(100% - 8px);
+  }
+
+  .case-visual-stack .case-hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .case-ui-preview {
+    box-shadow: 7px 7px 0 var(--red);
+  }
+
+  .case-ui-preview img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .case-console-preview {
+    box-shadow: 7px 7px 0 var(--red);
+  }
+
+  .case-console-preview img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .case-workflow-preview {
+    box-shadow: 7px 7px 0 var(--green);
+  }
+
+  .case-workflow-preview img {
+    aspect-ratio: 16 / 9;
   }
 
   .identity-plate {
