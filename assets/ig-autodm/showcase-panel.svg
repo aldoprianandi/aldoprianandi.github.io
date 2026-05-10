@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
   <title id="title">Instagram AutoDM workflow showcase</title>
-  <desc id="desc">A portfolio visual showing an owned Instagram comment-to-DM workflow, queue, admin controls, and final DM handoff.</desc>
+  <desc id="desc">A portfolio visual showing an owned Instagram comment-to-DM workflow with campaign setup, verified intake, queued private replies, and operator controls.</desc>
   <defs>
     <filter id="hard-shadow" x="-8%" y="-8%" width="116%" height="116%">
       <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#9b3328" flood-opacity="1"/>
@@ -35,20 +35,20 @@
   <circle cx="84" cy="86" r="10" class="red"/>
   <circle cx="116" cy="86" r="10" fill="#d7a64a"/>
   <circle cx="148" cy="86" r="10" class="green"/>
-  <text x="184" y="92" class="mono small cream">Workflow backend showcase</text>
-  <text x="875" y="92" class="mono tiny" fill="#c9d3df">official API / self-hosted</text>
+  <text x="184" y="92" class="mono small cream">Operator workflow backend</text>
+  <text x="846" y="92" class="mono tiny" fill="#c9d3df">official API / queue / controls</text>
 
-  <text x="72" y="191" class="display h ink">IG comment-to-DM backend</text>
-  <text x="72" y="228" class="body small muted">Owned campaigns. Official API. Queue-backed delivery. Operator controls.</text>
+  <text x="72" y="191" class="display h ink">IG AutoDM backend</text>
+  <text x="72" y="228" class="body small muted">Campaign setup, verified intake, queue-backed replies, and operator controls.</text>
 
   <g transform="translate(80 275)">
     <rect x="0" y="0" width="225" height="300" rx="34" class="ink"/>
     <rect x="17" y="20" width="191" height="260" rx="24" class="cream"/>
     <circle cx="112" cy="48" r="18" class="red"/>
     <text x="44" y="88" class="mono tiny muted">@brand.page</text>
-    <rect x="36" y="112" width="154" height="64" rx="18" class="tan thin"/>
-    <text x="54" y="139" class="body tiny ink">Comment</text>
-    <text x="54" y="162" class="display body-size ink">MAU</text>
+      <rect x="36" y="112" width="154" height="64" rx="18" class="tan thin"/>
+      <text x="54" y="139" class="body tiny ink">Comment</text>
+      <text x="54" y="162" class="display body-size ink">MAU</text>
     <path d="M55 209h96" stroke="#171a1f" stroke-width="7" stroke-linecap="round"/>
     <path d="M55 232h126" stroke="#171a1f" stroke-width="7" stroke-linecap="round"/>
     <path d="M55 255h72" stroke="#171a1f" stroke-width="7" stroke-linecap="round"/>
@@ -56,18 +56,18 @@
 
   <g transform="translate(354 274)">
     <rect x="0" y="0" width="250" height="302" class="tan line"/>
-    <text x="24" y="43" class="mono tiny blue">EVENT ROUTE</text>
+    <text x="24" y="43" class="mono tiny blue">INTAKE ROUTE</text>
     <g transform="translate(26 74)">
       <circle cx="16" cy="16" r="16" class="green"/>
-      <text x="52" y="23" class="body small ink">comment match</text>
+      <text x="52" y="23" class="body small ink">comment trigger</text>
     </g>
     <g transform="translate(26 126)">
       <circle cx="16" cy="16" r="16" class="green"/>
-      <text x="52" y="23" class="body small ink">webhook check</text>
+      <text x="52" y="23" class="body small ink">verified intake</text>
     </g>
     <g transform="translate(26 178)">
       <circle cx="16" cy="16" r="16" class="blue"/>
-      <text x="52" y="23" class="body small ink">queue send</text>
+      <text x="52" y="23" class="body small ink">private reply</text>
     </g>
     <g transform="translate(26 230)">
       <circle cx="16" cy="16" r="16" class="red"/>
@@ -79,21 +79,21 @@
   <g transform="translate(654 274)">
     <rect x="0" y="0" width="420" height="302" class="ink"/>
     <text x="26" y="45" class="mono tiny" fill="#8fcca8">OPS PANEL</text>
-    <text x="26" y="88" class="display body-size cream">Campaign controls</text>
+    <text x="26" y="88" class="display body-size cream">Campaign console</text>
     <g transform="translate(26 118)">
       <rect width="168" height="54" class="cream"/>
-      <text x="18" y="22" class="mono tiny blue">STATUS</text>
-      <text x="18" y="43" class="body tiny ink">paused by default</text>
+      <text x="18" y="22" class="mono tiny blue">BUILDER</text>
+      <text x="18" y="43" class="body tiny ink">post + keyword</text>
     </g>
     <g transform="translate(214 118)">
       <rect width="178" height="54" class="cream"/>
-      <text x="18" y="22" class="mono tiny blue">QUEUE</text>
-      <text x="18" y="43" class="body tiny ink">retry-safe jobs</text>
+      <text x="18" y="22" class="mono tiny blue">DELIVERY</text>
+      <text x="18" y="43" class="body tiny ink">queue + fallback</text>
     </g>
     <g transform="translate(26 198)">
       <rect width="366" height="62" fill="#2f6d51"/>
-      <text x="20" y="26" class="mono tiny cream">ADMIN PREVIEW</text>
-      <text x="20" y="49" class="body tiny cream">template, reply, button step, final link</text>
+      <text x="20" y="26" class="mono tiny cream">OPERATOR PREVIEW</text>
+      <text x="20" y="49" class="body tiny cream">public reply, DM step, audit trail</text>
     </g>
   </g>
 
@@ -102,6 +102,6 @@
   <path d="M614 425h30" class="line" fill="none"/>
   <path d="M636 412l17 13-17 13" class="line" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <rect x="72" y="596" width="312" height="32" class="red"/>
-  <text x="88" y="618" class="mono tiny cream">Comment -> queue -> DM handoff.</text>
+  <rect x="72" y="596" width="442" height="32" class="red"/>
+  <text x="88" y="618" class="mono tiny cream">Comment -> private reply -> DM handoff.</text>
 </svg>
